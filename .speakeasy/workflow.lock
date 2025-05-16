@@ -1,0 +1,28 @@
+speakeasyVersion: 1.546.1
+sources: {}
+targets:
+    prowlarr:
+        source: Prowlarr
+        codeSamplesNamespace: prowlarr-typescript-code-samples
+        codeSamplesRevisionDigest: sha256:7afc8f22dd3763349bcacd94c8ea523e1f5414b3feaa39a6c30c85fd7e687643
+workflow:
+    workflowVersion: 1.0.0
+    speakeasyVersion: latest
+    sources:
+        Prowlarr:
+            inputs:
+                - location: https://raw.githubusercontent.com/Prowlarr/Prowlarr/develop/src/Prowlarr.Api.V1/openapi.json
+            overlays:
+                - location: .speakeasy/speakeasy-modifications-overlay.yaml
+            registry:
+                location: registry.speakeasyapi.dev/lukehagar/lukehagar/prowlarr
+    targets:
+        prowlarr:
+            target: typescript
+            source: Prowlarr
+            codeSamples:
+                registry:
+                    location: registry.speakeasyapi.dev/lukehagar/lukehagar/prowlarr-typescript-code-samples
+                labelOverride:
+                    fixedValue: Typescript (SDK)
+                blocking: false

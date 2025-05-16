@@ -1,0 +1,1403 @@
+lockVersion: 2.0.0
+id: dcd1d874-ad0d-475e-9c83-6083a087fb17
+management:
+  docChecksum: 9f92220db0dc81897b8a47c86bfd4b04
+  docVersion: 1.0.0
+  speakeasyVersion: 1.546.1
+  generationVersion: 2.604.2
+  releaseVersion: 0.0.1
+  configChecksum: 34755fbe88f40a507b248ec6a6774196
+features:
+  typescript:
+    additionalDependencies: 0.1.0
+    constsAndDefaults: 0.1.11
+    core: 3.21.8
+    defaultEnabledRetries: 0.1.0
+    devContainers: 2.90.0
+    enumUnions: 0.1.0
+    envVarSecurityUsage: 0.1.2
+    globalSecurity: 2.82.13
+    globalSecurityCallbacks: 0.1.0
+    globalServerURLs: 2.82.5
+    inputOutputModels: 2.82.0
+    mcpServer: 0.9.2
+    nullables: 0.1.1
+    responseFormat: 0.2.3
+    retries: 2.83.0
+    sdkHooks: 0.2.0
+generatedFiles:
+  - .devcontainer/README.md
+  - .devcontainer/devcontainer.json
+  - .devcontainer/setup.sh
+  - .gitattributes
+  - .npmignore
+  - FUNCTIONS.md
+  - RUNTIMES.md
+  - USAGE.md
+  - docs/lib/utils/retryconfig.md
+  - docs/models/apiinforesource.md
+  - docs/models/applicationbulkresource.md
+  - docs/models/applicationresource.md
+  - docs/models/applicationsynclevel.md
+  - docs/models/applytags.md
+  - docs/models/appprofileresource.md
+  - docs/models/authenticationrequiredtype.md
+  - docs/models/authenticationtype.md
+  - docs/models/backupresource.md
+  - docs/models/backuptype.md
+  - docs/models/booksearchparam.md
+  - docs/models/certificatevalidationtype.md
+  - docs/models/command.md
+  - docs/models/commandinput.md
+  - docs/models/commandpriority.md
+  - docs/models/commandresource.md
+  - docs/models/commandresourceinput.md
+  - docs/models/commandstatus.md
+  - docs/models/commandtrigger.md
+  - docs/models/customfilterresource.md
+  - docs/models/databasetype.md
+  - docs/models/developmentconfigresource.md
+  - docs/models/downloadclientbulkresource.md
+  - docs/models/downloadclientcategory.md
+  - docs/models/downloadclientconfigresource.md
+  - docs/models/downloadclientresource.md
+  - docs/models/downloadprotocol.md
+  - docs/models/field.md
+  - docs/models/healthcheckresult.md
+  - docs/models/healthresource.md
+  - docs/models/historyeventtype.md
+  - docs/models/historyresource.md
+  - docs/models/historyresourcepagingresource.md
+  - docs/models/hostconfigresource.md
+  - docs/models/hoststatistics.md
+  - docs/models/indexerbulkresource.md
+  - docs/models/indexercapabilityresource.md
+  - docs/models/indexercapabilityresourceinput.md
+  - docs/models/indexercategory.md
+  - docs/models/indexercategoryinput.md
+  - docs/models/indexerprivacy.md
+  - docs/models/indexerproxyresource.md
+  - docs/models/indexerresource.md
+  - docs/models/indexerresourceinput.md
+  - docs/models/indexerstatistics.md
+  - docs/models/indexerstatsresource.md
+  - docs/models/indexerstatusresource.md
+  - docs/models/localizationoption.md
+  - docs/models/logfileresource.md
+  - docs/models/logresource.md
+  - docs/models/logresourcepagingresource.md
+  - docs/models/moviesearchparam.md
+  - docs/models/musicsearchparam.md
+  - docs/models/notificationresource.md
+  - docs/models/operations/deleteapiv1applicationsidrequest.md
+  - docs/models/operations/deleteapiv1appprofileidrequest.md
+  - docs/models/operations/deleteapiv1commandidrequest.md
+  - docs/models/operations/deleteapiv1customfilteridrequest.md
+  - docs/models/operations/deleteapiv1downloadclientidrequest.md
+  - docs/models/operations/deleteapiv1indexeridrequest.md
+  - docs/models/operations/deleteapiv1indexerproxyidrequest.md
+  - docs/models/operations/deleteapiv1notificationidrequest.md
+  - docs/models/operations/deleteapiv1systembackupidrequest.md
+  - docs/models/operations/deleteapiv1tagidrequest.md
+  - docs/models/operations/getapiv1applicationsidrequest.md
+  - docs/models/operations/getapiv1appprofileidrequest.md
+  - docs/models/operations/getapiv1commandidrequest.md
+  - docs/models/operations/getapiv1configdevelopmentidrequest.md
+  - docs/models/operations/getapiv1configdownloadclientidrequest.md
+  - docs/models/operations/getapiv1confighostidrequest.md
+  - docs/models/operations/getapiv1configuiidrequest.md
+  - docs/models/operations/getapiv1customfilteridrequest.md
+  - docs/models/operations/getapiv1downloadclientidrequest.md
+  - docs/models/operations/getapiv1filesystemrequest.md
+  - docs/models/operations/getapiv1filesystemtyperequest.md
+  - docs/models/operations/getapiv1historyindexerrequest.md
+  - docs/models/operations/getapiv1historyrequest.md
+  - docs/models/operations/getapiv1historysincerequest.md
+  - docs/models/operations/getapiv1indexeriddownloadrequest.md
+  - docs/models/operations/getapiv1indexeridnewznabrequest.md
+  - docs/models/operations/getapiv1indexeridrequest.md
+  - docs/models/operations/getapiv1indexerproxyidrequest.md
+  - docs/models/operations/getapiv1indexerstatsrequest.md
+  - docs/models/operations/getapiv1logfilefilenamerequest.md
+  - docs/models/operations/getapiv1logfileupdatefilenamerequest.md
+  - docs/models/operations/getapiv1logrequest.md
+  - docs/models/operations/getapiv1notificationidrequest.md
+  - docs/models/operations/getapiv1searchrequest.md
+  - docs/models/operations/getapiv1systemtaskidrequest.md
+  - docs/models/operations/getapiv1tagdetailidrequest.md
+  - docs/models/operations/getapiv1tagidrequest.md
+  - docs/models/operations/getcontentpathrequest.md
+  - docs/models/operations/getidapirequest.md
+  - docs/models/operations/getiddownloadrequest.md
+  - docs/models/operations/getpathrequest.md
+  - docs/models/operations/postapiv1applicationsactionnamerequest.md
+  - docs/models/operations/postapiv1applicationsrequest.md
+  - docs/models/operations/postapiv1applicationstestrequest.md
+  - docs/models/operations/postapiv1downloadclientactionnamerequest.md
+  - docs/models/operations/postapiv1downloadclientrequest.md
+  - docs/models/operations/postapiv1downloadclienttestrequest.md
+  - docs/models/operations/postapiv1indexeractionnamerequest.md
+  - docs/models/operations/postapiv1indexerproxyactionnamerequest.md
+  - docs/models/operations/postapiv1indexerproxyrequest.md
+  - docs/models/operations/postapiv1indexerproxytestrequest.md
+  - docs/models/operations/postapiv1indexerrequest.md
+  - docs/models/operations/postapiv1indexertestrequest.md
+  - docs/models/operations/postapiv1notificationactionnamerequest.md
+  - docs/models/operations/postapiv1notificationrequest.md
+  - docs/models/operations/postapiv1notificationtestrequest.md
+  - docs/models/operations/postapiv1systembackuprestoreidrequest.md
+  - docs/models/operations/putapiv1applicationsidrequest.md
+  - docs/models/operations/putapiv1appprofileidrequest.md
+  - docs/models/operations/putapiv1configdevelopmentidrequest.md
+  - docs/models/operations/putapiv1configdownloadclientidrequest.md
+  - docs/models/operations/putapiv1confighostidrequest.md
+  - docs/models/operations/putapiv1configuiidrequest.md
+  - docs/models/operations/putapiv1customfilteridrequest.md
+  - docs/models/operations/putapiv1downloadclientidrequest.md
+  - docs/models/operations/putapiv1indexeridrequest.md
+  - docs/models/operations/putapiv1indexerproxyidrequest.md
+  - docs/models/operations/putapiv1notificationidrequest.md
+  - docs/models/operations/putapiv1tagidrequest.md
+  - docs/models/pingresource.md
+  - docs/models/privacylevel.md
+  - docs/models/providermessage.md
+  - docs/models/providermessagetype.md
+  - docs/models/proxytype.md
+  - docs/models/releaseresource.md
+  - docs/models/releaseresourceinput.md
+  - docs/models/runtimemode.md
+  - docs/models/searchparam.md
+  - docs/models/security.md
+  - docs/models/selectoption.md
+  - docs/models/sortdirection.md
+  - docs/models/systemresource.md
+  - docs/models/tagdetailsresource.md
+  - docs/models/tagresource.md
+  - docs/models/taskresource.md
+  - docs/models/tvsearchparam.md
+  - docs/models/uiconfigresource.md
+  - docs/models/updatechanges.md
+  - docs/models/updatemechanism.md
+  - docs/models/updateresource.md
+  - docs/models/useragentstatistics.md
+  - docs/sdks/apiinfo/README.md
+  - docs/sdks/application/README.md
+  - docs/sdks/appprofile/README.md
+  - docs/sdks/authentication/README.md
+  - docs/sdks/backup/README.md
+  - docs/sdks/command/README.md
+  - docs/sdks/customfilter/README.md
+  - docs/sdks/developmentconfig/README.md
+  - docs/sdks/downloadclient/README.md
+  - docs/sdks/downloadclientconfig/README.md
+  - docs/sdks/filesystem/README.md
+  - docs/sdks/health/README.md
+  - docs/sdks/history/README.md
+  - docs/sdks/hostconfig/README.md
+  - docs/sdks/indexer/README.md
+  - docs/sdks/indexerdefaultcategories/README.md
+  - docs/sdks/indexerproxy/README.md
+  - docs/sdks/indexerstats/README.md
+  - docs/sdks/indexerstatus/README.md
+  - docs/sdks/localization/README.md
+  - docs/sdks/log/README.md
+  - docs/sdks/logfile/README.md
+  - docs/sdks/newznab/README.md
+  - docs/sdks/notification/README.md
+  - docs/sdks/ping/README.md
+  - docs/sdks/prowlarr/README.md
+  - docs/sdks/search/README.md
+  - docs/sdks/staticresource/README.md
+  - docs/sdks/system/README.md
+  - docs/sdks/tag/README.md
+  - docs/sdks/tagdetails/README.md
+  - docs/sdks/task/README.md
+  - docs/sdks/uiconfig/README.md
+  - docs/sdks/update/README.md
+  - docs/sdks/updatelogfile/README.md
+  - eslint.config.mjs
+  - jsr.json
+  - package.json
+  - src/core.ts
+  - src/funcs/apiInfoGetApi.ts
+  - src/funcs/appProfileDeleteApiV1AppprofileId.ts
+  - src/funcs/appProfileGetApiV1Appprofile.ts
+  - src/funcs/appProfileGetApiV1AppprofileId.ts
+  - src/funcs/appProfileGetApiV1AppprofileSchema.ts
+  - src/funcs/appProfilePostApiV1Appprofile.ts
+  - src/funcs/appProfilePutApiV1AppprofileId.ts
+  - src/funcs/applicationDeleteApiV1ApplicationsBulk.ts
+  - src/funcs/applicationDeleteApiV1ApplicationsId.ts
+  - src/funcs/applicationGetApiV1Applications.ts
+  - src/funcs/applicationGetApiV1ApplicationsId.ts
+  - src/funcs/applicationGetApiV1ApplicationsSchema.ts
+  - src/funcs/applicationPostApiV1Applications.ts
+  - src/funcs/applicationPostApiV1ApplicationsActionName.ts
+  - src/funcs/applicationPostApiV1ApplicationsTest.ts
+  - src/funcs/applicationPostApiV1ApplicationsTestall.ts
+  - src/funcs/applicationPutApiV1ApplicationsBulk.ts
+  - src/funcs/applicationPutApiV1ApplicationsId.ts
+  - src/funcs/authenticationGetLogout.ts
+  - src/funcs/backupDeleteApiV1SystemBackupId.ts
+  - src/funcs/backupGetApiV1SystemBackup.ts
+  - src/funcs/backupPostApiV1SystemBackupRestoreId.ts
+  - src/funcs/backupPostApiV1SystemBackupRestoreUpload.ts
+  - src/funcs/commandDeleteApiV1CommandId.ts
+  - src/funcs/commandGetApiV1Command.ts
+  - src/funcs/commandGetApiV1CommandId.ts
+  - src/funcs/commandPostApiV1Command.ts
+  - src/funcs/customFilterDeleteApiV1CustomfilterId.ts
+  - src/funcs/customFilterGetApiV1Customfilter.ts
+  - src/funcs/customFilterGetApiV1CustomfilterId.ts
+  - src/funcs/customFilterPostApiV1Customfilter.ts
+  - src/funcs/customFilterPutApiV1CustomfilterId.ts
+  - src/funcs/developmentConfigGetApiV1ConfigDevelopment.ts
+  - src/funcs/developmentConfigGetApiV1ConfigDevelopmentId.ts
+  - src/funcs/developmentConfigPutApiV1ConfigDevelopmentId.ts
+  - src/funcs/downloadClientConfigGetApiV1ConfigDownloadclient.ts
+  - src/funcs/downloadClientConfigGetApiV1ConfigDownloadclientId.ts
+  - src/funcs/downloadClientConfigPutApiV1ConfigDownloadclientId.ts
+  - src/funcs/downloadClientDeleteApiV1DownloadclientBulk.ts
+  - src/funcs/downloadClientDeleteApiV1DownloadclientId.ts
+  - src/funcs/downloadClientGetApiV1Downloadclient.ts
+  - src/funcs/downloadClientGetApiV1DownloadclientId.ts
+  - src/funcs/downloadClientGetApiV1DownloadclientSchema.ts
+  - src/funcs/downloadClientPostApiV1Downloadclient.ts
+  - src/funcs/downloadClientPostApiV1DownloadclientActionName.ts
+  - src/funcs/downloadClientPostApiV1DownloadclientTest.ts
+  - src/funcs/downloadClientPostApiV1DownloadclientTestall.ts
+  - src/funcs/downloadClientPutApiV1DownloadclientBulk.ts
+  - src/funcs/downloadClientPutApiV1DownloadclientId.ts
+  - src/funcs/fileSystemGetApiV1Filesystem.ts
+  - src/funcs/fileSystemGetApiV1FilesystemType.ts
+  - src/funcs/healthGetApiV1Health.ts
+  - src/funcs/historyGetApiV1History.ts
+  - src/funcs/historyGetApiV1HistoryIndexer.ts
+  - src/funcs/historyGetApiV1HistorySince.ts
+  - src/funcs/hostConfigGetApiV1ConfigHost.ts
+  - src/funcs/hostConfigGetApiV1ConfigHostId.ts
+  - src/funcs/hostConfigPutApiV1ConfigHostId.ts
+  - src/funcs/indexerDefaultCategoriesGetApiV1IndexerCategories.ts
+  - src/funcs/indexerDeleteApiV1IndexerBulk.ts
+  - src/funcs/indexerDeleteApiV1IndexerId.ts
+  - src/funcs/indexerGetApiV1Indexer.ts
+  - src/funcs/indexerGetApiV1IndexerId.ts
+  - src/funcs/indexerGetApiV1IndexerSchema.ts
+  - src/funcs/indexerPostApiV1Indexer.ts
+  - src/funcs/indexerPostApiV1IndexerActionName.ts
+  - src/funcs/indexerPostApiV1IndexerTest.ts
+  - src/funcs/indexerPostApiV1IndexerTestall.ts
+  - src/funcs/indexerProxyDeleteApiV1IndexerproxyId.ts
+  - src/funcs/indexerProxyGetApiV1Indexerproxy.ts
+  - src/funcs/indexerProxyGetApiV1IndexerproxyId.ts
+  - src/funcs/indexerProxyGetApiV1IndexerproxySchema.ts
+  - src/funcs/indexerProxyPostApiV1Indexerproxy.ts
+  - src/funcs/indexerProxyPostApiV1IndexerproxyActionName.ts
+  - src/funcs/indexerProxyPostApiV1IndexerproxyTest.ts
+  - src/funcs/indexerProxyPostApiV1IndexerproxyTestall.ts
+  - src/funcs/indexerProxyPutApiV1IndexerproxyId.ts
+  - src/funcs/indexerPutApiV1IndexerBulk.ts
+  - src/funcs/indexerPutApiV1IndexerId.ts
+  - src/funcs/indexerStatsGetApiV1Indexerstats.ts
+  - src/funcs/indexerStatusGetApiV1Indexerstatus.ts
+  - src/funcs/localizationGetApiV1Localization.ts
+  - src/funcs/localizationGetApiV1LocalizationOptions.ts
+  - src/funcs/logFileGetApiV1LogFile.ts
+  - src/funcs/logFileGetApiV1LogFileFilename.ts
+  - src/funcs/logGetApiV1Log.ts
+  - src/funcs/newznabGetApiV1IndexerIdDownload.ts
+  - src/funcs/newznabGetApiV1IndexerIdNewznab.ts
+  - src/funcs/newznabGetIdApi.ts
+  - src/funcs/newznabGetIdDownload.ts
+  - src/funcs/notificationDeleteApiV1NotificationId.ts
+  - src/funcs/notificationGetApiV1Notification.ts
+  - src/funcs/notificationGetApiV1NotificationId.ts
+  - src/funcs/notificationGetApiV1NotificationSchema.ts
+  - src/funcs/notificationPostApiV1Notification.ts
+  - src/funcs/notificationPostApiV1NotificationActionName.ts
+  - src/funcs/notificationPostApiV1NotificationTest.ts
+  - src/funcs/notificationPostApiV1NotificationTestall.ts
+  - src/funcs/notificationPutApiV1NotificationId.ts
+  - src/funcs/pingGetPing.ts
+  - src/funcs/pingHeadPing.ts
+  - src/funcs/searchGetApiV1Search.ts
+  - src/funcs/searchPostApiV1Search.ts
+  - src/funcs/searchPostApiV1SearchBulk.ts
+  - src/funcs/staticResourceGet.ts
+  - src/funcs/staticResourceGetContentPath.ts
+  - src/funcs/staticResourceGetLogin.ts
+  - src/funcs/staticResourceGetPath.ts
+  - src/funcs/systemGetApiV1SystemRoutes.ts
+  - src/funcs/systemGetApiV1SystemRoutesDuplicate.ts
+  - src/funcs/systemGetApiV1SystemStatus.ts
+  - src/funcs/systemPostApiV1SystemRestart.ts
+  - src/funcs/systemPostApiV1SystemShutdown.ts
+  - src/funcs/tagDeleteApiV1TagId.ts
+  - src/funcs/tagDetailsGetApiV1TagDetail.ts
+  - src/funcs/tagDetailsGetApiV1TagDetailId.ts
+  - src/funcs/tagGetApiV1Tag.ts
+  - src/funcs/tagGetApiV1TagId.ts
+  - src/funcs/tagPostApiV1Tag.ts
+  - src/funcs/tagPutApiV1TagId.ts
+  - src/funcs/taskGetApiV1SystemTask.ts
+  - src/funcs/taskGetApiV1SystemTaskId.ts
+  - src/funcs/uiConfigGetApiV1ConfigUi.ts
+  - src/funcs/uiConfigGetApiV1ConfigUiId.ts
+  - src/funcs/uiConfigPutApiV1ConfigUiId.ts
+  - src/funcs/updateGetApiV1Update.ts
+  - src/funcs/updateLogFileGetApiV1LogFileUpdate.ts
+  - src/funcs/updateLogFileGetApiV1LogFileUpdateFilename.ts
+  - src/hooks/hooks.ts
+  - src/hooks/index.ts
+  - src/hooks/types.ts
+  - src/index.ts
+  - src/lib/base64.ts
+  - src/lib/config.ts
+  - src/lib/dlv.ts
+  - src/lib/encodings.ts
+  - src/lib/env.ts
+  - src/lib/files.ts
+  - src/lib/http.ts
+  - src/lib/is-plain-object.ts
+  - src/lib/logger.ts
+  - src/lib/matchers.ts
+  - src/lib/primitives.ts
+  - src/lib/retries.ts
+  - src/lib/schemas.ts
+  - src/lib/sdks.ts
+  - src/lib/security.ts
+  - src/lib/url.ts
+  - src/mcp-server/build.mts
+  - src/mcp-server/cli.ts
+  - src/mcp-server/cli/start/command.ts
+  - src/mcp-server/cli/start/impl.ts
+  - src/mcp-server/console-logger.ts
+  - src/mcp-server/extensions.ts
+  - src/mcp-server/mcp-server.ts
+  - src/mcp-server/prompts.ts
+  - src/mcp-server/resources.ts
+  - src/mcp-server/scopes.ts
+  - src/mcp-server/server.ts
+  - src/mcp-server/shared.ts
+  - src/mcp-server/tools.ts
+  - src/mcp-server/tools/apiInfoGetApi.ts
+  - src/mcp-server/tools/appProfileDeleteApiV1AppprofileId.ts
+  - src/mcp-server/tools/appProfileGetApiV1Appprofile.ts
+  - src/mcp-server/tools/appProfileGetApiV1AppprofileId.ts
+  - src/mcp-server/tools/appProfileGetApiV1AppprofileSchema.ts
+  - src/mcp-server/tools/appProfilePostApiV1Appprofile.ts
+  - src/mcp-server/tools/appProfilePutApiV1AppprofileId.ts
+  - src/mcp-server/tools/applicationDeleteApiV1ApplicationsBulk.ts
+  - src/mcp-server/tools/applicationDeleteApiV1ApplicationsId.ts
+  - src/mcp-server/tools/applicationGetApiV1Applications.ts
+  - src/mcp-server/tools/applicationGetApiV1ApplicationsId.ts
+  - src/mcp-server/tools/applicationGetApiV1ApplicationsSchema.ts
+  - src/mcp-server/tools/applicationPostApiV1Applications.ts
+  - src/mcp-server/tools/applicationPostApiV1ApplicationsActionName.ts
+  - src/mcp-server/tools/applicationPostApiV1ApplicationsTest.ts
+  - src/mcp-server/tools/applicationPostApiV1ApplicationsTestall.ts
+  - src/mcp-server/tools/applicationPutApiV1ApplicationsBulk.ts
+  - src/mcp-server/tools/applicationPutApiV1ApplicationsId.ts
+  - src/mcp-server/tools/authenticationGetLogout.ts
+  - src/mcp-server/tools/backupDeleteApiV1SystemBackupId.ts
+  - src/mcp-server/tools/backupGetApiV1SystemBackup.ts
+  - src/mcp-server/tools/backupPostApiV1SystemBackupRestoreId.ts
+  - src/mcp-server/tools/backupPostApiV1SystemBackupRestoreUpload.ts
+  - src/mcp-server/tools/commandDeleteApiV1CommandId.ts
+  - src/mcp-server/tools/commandGetApiV1Command.ts
+  - src/mcp-server/tools/commandGetApiV1CommandId.ts
+  - src/mcp-server/tools/commandPostApiV1Command.ts
+  - src/mcp-server/tools/customFilterDeleteApiV1CustomfilterId.ts
+  - src/mcp-server/tools/customFilterGetApiV1Customfilter.ts
+  - src/mcp-server/tools/customFilterGetApiV1CustomfilterId.ts
+  - src/mcp-server/tools/customFilterPostApiV1Customfilter.ts
+  - src/mcp-server/tools/customFilterPutApiV1CustomfilterId.ts
+  - src/mcp-server/tools/developmentConfigGetApiV1ConfigDevelopment.ts
+  - src/mcp-server/tools/developmentConfigGetApiV1ConfigDevelopmentId.ts
+  - src/mcp-server/tools/developmentConfigPutApiV1ConfigDevelopmentId.ts
+  - src/mcp-server/tools/downloadClientConfigGetApiV1ConfigDownloadclient.ts
+  - src/mcp-server/tools/downloadClientConfigGetApiV1ConfigDownloadclientId.ts
+  - src/mcp-server/tools/downloadClientConfigPutApiV1ConfigDownloadclientId.ts
+  - src/mcp-server/tools/downloadClientDeleteApiV1DownloadclientBulk.ts
+  - src/mcp-server/tools/downloadClientDeleteApiV1DownloadclientId.ts
+  - src/mcp-server/tools/downloadClientGetApiV1Downloadclient.ts
+  - src/mcp-server/tools/downloadClientGetApiV1DownloadclientId.ts
+  - src/mcp-server/tools/downloadClientGetApiV1DownloadclientSchema.ts
+  - src/mcp-server/tools/downloadClientPostApiV1Downloadclient.ts
+  - src/mcp-server/tools/downloadClientPostApiV1DownloadclientActionName.ts
+  - src/mcp-server/tools/downloadClientPostApiV1DownloadclientTest.ts
+  - src/mcp-server/tools/downloadClientPostApiV1DownloadclientTestall.ts
+  - src/mcp-server/tools/downloadClientPutApiV1DownloadclientBulk.ts
+  - src/mcp-server/tools/downloadClientPutApiV1DownloadclientId.ts
+  - src/mcp-server/tools/fileSystemGetApiV1Filesystem.ts
+  - src/mcp-server/tools/fileSystemGetApiV1FilesystemType.ts
+  - src/mcp-server/tools/healthGetApiV1Health.ts
+  - src/mcp-server/tools/historyGetApiV1History.ts
+  - src/mcp-server/tools/historyGetApiV1HistoryIndexer.ts
+  - src/mcp-server/tools/historyGetApiV1HistorySince.ts
+  - src/mcp-server/tools/hostConfigGetApiV1ConfigHost.ts
+  - src/mcp-server/tools/hostConfigGetApiV1ConfigHostId.ts
+  - src/mcp-server/tools/hostConfigPutApiV1ConfigHostId.ts
+  - src/mcp-server/tools/indexerDefaultCategoriesGetApiV1IndexerCategories.ts
+  - src/mcp-server/tools/indexerDeleteApiV1IndexerBulk.ts
+  - src/mcp-server/tools/indexerDeleteApiV1IndexerId.ts
+  - src/mcp-server/tools/indexerGetApiV1Indexer.ts
+  - src/mcp-server/tools/indexerGetApiV1IndexerId.ts
+  - src/mcp-server/tools/indexerGetApiV1IndexerSchema.ts
+  - src/mcp-server/tools/indexerPostApiV1Indexer.ts
+  - src/mcp-server/tools/indexerPostApiV1IndexerActionName.ts
+  - src/mcp-server/tools/indexerPostApiV1IndexerTest.ts
+  - src/mcp-server/tools/indexerPostApiV1IndexerTestall.ts
+  - src/mcp-server/tools/indexerProxyDeleteApiV1IndexerproxyId.ts
+  - src/mcp-server/tools/indexerProxyGetApiV1Indexerproxy.ts
+  - src/mcp-server/tools/indexerProxyGetApiV1IndexerproxyId.ts
+  - src/mcp-server/tools/indexerProxyGetApiV1IndexerproxySchema.ts
+  - src/mcp-server/tools/indexerProxyPostApiV1Indexerproxy.ts
+  - src/mcp-server/tools/indexerProxyPostApiV1IndexerproxyActionName.ts
+  - src/mcp-server/tools/indexerProxyPostApiV1IndexerproxyTest.ts
+  - src/mcp-server/tools/indexerProxyPostApiV1IndexerproxyTestall.ts
+  - src/mcp-server/tools/indexerProxyPutApiV1IndexerproxyId.ts
+  - src/mcp-server/tools/indexerPutApiV1IndexerBulk.ts
+  - src/mcp-server/tools/indexerPutApiV1IndexerId.ts
+  - src/mcp-server/tools/indexerStatsGetApiV1Indexerstats.ts
+  - src/mcp-server/tools/indexerStatusGetApiV1Indexerstatus.ts
+  - src/mcp-server/tools/localizationGetApiV1Localization.ts
+  - src/mcp-server/tools/localizationGetApiV1LocalizationOptions.ts
+  - src/mcp-server/tools/logFileGetApiV1LogFile.ts
+  - src/mcp-server/tools/logFileGetApiV1LogFileFilename.ts
+  - src/mcp-server/tools/logGetApiV1Log.ts
+  - src/mcp-server/tools/newznabGetApiV1IndexerIdDownload.ts
+  - src/mcp-server/tools/newznabGetApiV1IndexerIdNewznab.ts
+  - src/mcp-server/tools/newznabGetIdApi.ts
+  - src/mcp-server/tools/newznabGetIdDownload.ts
+  - src/mcp-server/tools/notificationDeleteApiV1NotificationId.ts
+  - src/mcp-server/tools/notificationGetApiV1Notification.ts
+  - src/mcp-server/tools/notificationGetApiV1NotificationId.ts
+  - src/mcp-server/tools/notificationGetApiV1NotificationSchema.ts
+  - src/mcp-server/tools/notificationPostApiV1Notification.ts
+  - src/mcp-server/tools/notificationPostApiV1NotificationActionName.ts
+  - src/mcp-server/tools/notificationPostApiV1NotificationTest.ts
+  - src/mcp-server/tools/notificationPostApiV1NotificationTestall.ts
+  - src/mcp-server/tools/notificationPutApiV1NotificationId.ts
+  - src/mcp-server/tools/pingGetPing.ts
+  - src/mcp-server/tools/pingHeadPing.ts
+  - src/mcp-server/tools/searchGetApiV1Search.ts
+  - src/mcp-server/tools/searchPostApiV1Search.ts
+  - src/mcp-server/tools/searchPostApiV1SearchBulk.ts
+  - src/mcp-server/tools/staticResourceGet.ts
+  - src/mcp-server/tools/staticResourceGetContentPath.ts
+  - src/mcp-server/tools/staticResourceGetLogin.ts
+  - src/mcp-server/tools/staticResourceGetPath.ts
+  - src/mcp-server/tools/systemGetApiV1SystemRoutes.ts
+  - src/mcp-server/tools/systemGetApiV1SystemRoutesDuplicate.ts
+  - src/mcp-server/tools/systemGetApiV1SystemStatus.ts
+  - src/mcp-server/tools/systemPostApiV1SystemRestart.ts
+  - src/mcp-server/tools/systemPostApiV1SystemShutdown.ts
+  - src/mcp-server/tools/tagDeleteApiV1TagId.ts
+  - src/mcp-server/tools/tagDetailsGetApiV1TagDetail.ts
+  - src/mcp-server/tools/tagDetailsGetApiV1TagDetailId.ts
+  - src/mcp-server/tools/tagGetApiV1Tag.ts
+  - src/mcp-server/tools/tagGetApiV1TagId.ts
+  - src/mcp-server/tools/tagPostApiV1Tag.ts
+  - src/mcp-server/tools/tagPutApiV1TagId.ts
+  - src/mcp-server/tools/taskGetApiV1SystemTask.ts
+  - src/mcp-server/tools/taskGetApiV1SystemTaskId.ts
+  - src/mcp-server/tools/uiConfigGetApiV1ConfigUi.ts
+  - src/mcp-server/tools/uiConfigGetApiV1ConfigUiId.ts
+  - src/mcp-server/tools/uiConfigPutApiV1ConfigUiId.ts
+  - src/mcp-server/tools/updateGetApiV1Update.ts
+  - src/mcp-server/tools/updateLogFileGetApiV1LogFileUpdate.ts
+  - src/mcp-server/tools/updateLogFileGetApiV1LogFileUpdateFilename.ts
+  - src/models/apiinforesource.ts
+  - src/models/applicationbulkresource.ts
+  - src/models/applicationresource.ts
+  - src/models/applicationsynclevel.ts
+  - src/models/applytags.ts
+  - src/models/appprofileresource.ts
+  - src/models/authenticationrequiredtype.ts
+  - src/models/authenticationtype.ts
+  - src/models/backupresource.ts
+  - src/models/backuptype.ts
+  - src/models/booksearchparam.ts
+  - src/models/certificatevalidationtype.ts
+  - src/models/command.ts
+  - src/models/commandinput.ts
+  - src/models/commandpriority.ts
+  - src/models/commandresource.ts
+  - src/models/commandresourceinput.ts
+  - src/models/commandstatus.ts
+  - src/models/commandtrigger.ts
+  - src/models/customfilterresource.ts
+  - src/models/databasetype.ts
+  - src/models/developmentconfigresource.ts
+  - src/models/downloadclientbulkresource.ts
+  - src/models/downloadclientcategory.ts
+  - src/models/downloadclientconfigresource.ts
+  - src/models/downloadclientresource.ts
+  - src/models/downloadprotocol.ts
+  - src/models/errors/apierror.ts
+  - src/models/errors/httpclienterrors.ts
+  - src/models/errors/index.ts
+  - src/models/errors/sdkvalidationerror.ts
+  - src/models/field.ts
+  - src/models/healthcheckresult.ts
+  - src/models/healthresource.ts
+  - src/models/historyeventtype.ts
+  - src/models/historyresource.ts
+  - src/models/historyresourcepagingresource.ts
+  - src/models/hostconfigresource.ts
+  - src/models/hoststatistics.ts
+  - src/models/index.ts
+  - src/models/indexerbulkresource.ts
+  - src/models/indexercapabilityresource.ts
+  - src/models/indexercapabilityresourceinput.ts
+  - src/models/indexercategory.ts
+  - src/models/indexercategoryinput.ts
+  - src/models/indexerprivacy.ts
+  - src/models/indexerproxyresource.ts
+  - src/models/indexerresource.ts
+  - src/models/indexerresourceinput.ts
+  - src/models/indexerstatistics.ts
+  - src/models/indexerstatsresource.ts
+  - src/models/indexerstatusresource.ts
+  - src/models/localizationoption.ts
+  - src/models/logfileresource.ts
+  - src/models/logresource.ts
+  - src/models/logresourcepagingresource.ts
+  - src/models/moviesearchparam.ts
+  - src/models/musicsearchparam.ts
+  - src/models/notificationresource.ts
+  - src/models/operations/deleteapiv1applicationsid.ts
+  - src/models/operations/deleteapiv1appprofileid.ts
+  - src/models/operations/deleteapiv1commandid.ts
+  - src/models/operations/deleteapiv1customfilterid.ts
+  - src/models/operations/deleteapiv1downloadclientid.ts
+  - src/models/operations/deleteapiv1indexerid.ts
+  - src/models/operations/deleteapiv1indexerproxyid.ts
+  - src/models/operations/deleteapiv1notificationid.ts
+  - src/models/operations/deleteapiv1systembackupid.ts
+  - src/models/operations/deleteapiv1tagid.ts
+  - src/models/operations/getapiv1applicationsid.ts
+  - src/models/operations/getapiv1appprofileid.ts
+  - src/models/operations/getapiv1commandid.ts
+  - src/models/operations/getapiv1configdevelopmentid.ts
+  - src/models/operations/getapiv1configdownloadclientid.ts
+  - src/models/operations/getapiv1confighostid.ts
+  - src/models/operations/getapiv1configuiid.ts
+  - src/models/operations/getapiv1customfilterid.ts
+  - src/models/operations/getapiv1downloadclientid.ts
+  - src/models/operations/getapiv1filesystem.ts
+  - src/models/operations/getapiv1filesystemtype.ts
+  - src/models/operations/getapiv1history.ts
+  - src/models/operations/getapiv1historyindexer.ts
+  - src/models/operations/getapiv1historysince.ts
+  - src/models/operations/getapiv1indexerid.ts
+  - src/models/operations/getapiv1indexeriddownload.ts
+  - src/models/operations/getapiv1indexeridnewznab.ts
+  - src/models/operations/getapiv1indexerproxyid.ts
+  - src/models/operations/getapiv1indexerstats.ts
+  - src/models/operations/getapiv1log.ts
+  - src/models/operations/getapiv1logfilefilename.ts
+  - src/models/operations/getapiv1logfileupdatefilename.ts
+  - src/models/operations/getapiv1notificationid.ts
+  - src/models/operations/getapiv1search.ts
+  - src/models/operations/getapiv1systemtaskid.ts
+  - src/models/operations/getapiv1tagdetailid.ts
+  - src/models/operations/getapiv1tagid.ts
+  - src/models/operations/getcontentpath.ts
+  - src/models/operations/getidapi.ts
+  - src/models/operations/getiddownload.ts
+  - src/models/operations/getpath.ts
+  - src/models/operations/index.ts
+  - src/models/operations/postapiv1applications.ts
+  - src/models/operations/postapiv1applicationsactionname.ts
+  - src/models/operations/postapiv1applicationstest.ts
+  - src/models/operations/postapiv1downloadclient.ts
+  - src/models/operations/postapiv1downloadclientactionname.ts
+  - src/models/operations/postapiv1downloadclienttest.ts
+  - src/models/operations/postapiv1indexer.ts
+  - src/models/operations/postapiv1indexeractionname.ts
+  - src/models/operations/postapiv1indexerproxy.ts
+  - src/models/operations/postapiv1indexerproxyactionname.ts
+  - src/models/operations/postapiv1indexerproxytest.ts
+  - src/models/operations/postapiv1indexertest.ts
+  - src/models/operations/postapiv1notification.ts
+  - src/models/operations/postapiv1notificationactionname.ts
+  - src/models/operations/postapiv1notificationtest.ts
+  - src/models/operations/postapiv1systembackuprestoreid.ts
+  - src/models/operations/putapiv1applicationsid.ts
+  - src/models/operations/putapiv1appprofileid.ts
+  - src/models/operations/putapiv1configdevelopmentid.ts
+  - src/models/operations/putapiv1configdownloadclientid.ts
+  - src/models/operations/putapiv1confighostid.ts
+  - src/models/operations/putapiv1configuiid.ts
+  - src/models/operations/putapiv1customfilterid.ts
+  - src/models/operations/putapiv1downloadclientid.ts
+  - src/models/operations/putapiv1indexerid.ts
+  - src/models/operations/putapiv1indexerproxyid.ts
+  - src/models/operations/putapiv1notificationid.ts
+  - src/models/operations/putapiv1tagid.ts
+  - src/models/pingresource.ts
+  - src/models/privacylevel.ts
+  - src/models/providermessage.ts
+  - src/models/providermessagetype.ts
+  - src/models/proxytype.ts
+  - src/models/releaseresource.ts
+  - src/models/releaseresourceinput.ts
+  - src/models/runtimemode.ts
+  - src/models/searchparam.ts
+  - src/models/security.ts
+  - src/models/selectoption.ts
+  - src/models/sortdirection.ts
+  - src/models/systemresource.ts
+  - src/models/tagdetailsresource.ts
+  - src/models/tagresource.ts
+  - src/models/taskresource.ts
+  - src/models/tvsearchparam.ts
+  - src/models/uiconfigresource.ts
+  - src/models/updatechanges.ts
+  - src/models/updatemechanism.ts
+  - src/models/updateresource.ts
+  - src/models/useragentstatistics.ts
+  - src/sdk/apiinfo.ts
+  - src/sdk/application.ts
+  - src/sdk/appprofile.ts
+  - src/sdk/authentication.ts
+  - src/sdk/backup.ts
+  - src/sdk/command.ts
+  - src/sdk/customfilter.ts
+  - src/sdk/developmentconfig.ts
+  - src/sdk/downloadclient.ts
+  - src/sdk/downloadclientconfig.ts
+  - src/sdk/filesystem.ts
+  - src/sdk/health.ts
+  - src/sdk/history.ts
+  - src/sdk/hostconfig.ts
+  - src/sdk/index.ts
+  - src/sdk/indexer.ts
+  - src/sdk/indexerdefaultcategories.ts
+  - src/sdk/indexerproxy.ts
+  - src/sdk/indexerstats.ts
+  - src/sdk/indexerstatus.ts
+  - src/sdk/localization.ts
+  - src/sdk/log.ts
+  - src/sdk/logfile.ts
+  - src/sdk/newznab.ts
+  - src/sdk/notification.ts
+  - src/sdk/ping.ts
+  - src/sdk/sdk.ts
+  - src/sdk/search.ts
+  - src/sdk/staticresource.ts
+  - src/sdk/system.ts
+  - src/sdk/tag.ts
+  - src/sdk/tagdetails.ts
+  - src/sdk/task.ts
+  - src/sdk/uiconfig.ts
+  - src/sdk/update.ts
+  - src/sdk/updatelogfile.ts
+  - src/types/async.ts
+  - src/types/blobs.ts
+  - src/types/constdatetime.ts
+  - src/types/enums.ts
+  - src/types/fp.ts
+  - src/types/index.ts
+  - src/types/operations.ts
+  - src/types/rfcdate.ts
+  - src/types/streams.ts
+  - tsconfig.json
+examples:
+  get_/api:
+    speakeasy-default-get-/api:
+      responses:
+        "200":
+          application/json: {}
+  get_/api/v1/applications/{id}:
+    speakeasy-default-get-/api/v1-/applications/{id}:
+      parameters:
+        path:
+          id: 282902
+      responses:
+        "200":
+          application/json: {}
+  put_/api/v1/applications/{id}:
+    speakeasy-default-put-/api/v1-/applications/{id}:
+      parameters:
+        path:
+          id: "<id>"
+        query:
+          forceSave: false
+      responses:
+        "200":
+          application/json: {}
+  delete_/api/v1/applications/{id}:
+    speakeasy-default-delete-/api/v1-/applications/{id}:
+      parameters:
+        path:
+          id: 915442
+  get_/api/v1/applications:
+    speakeasy-default-get-/api/v1-/applications:
+      responses:
+        "200":
+          application/json: [{}, {}]
+  post_/api/v1/applications:
+    speakeasy-default-post-/api/v1-/applications:
+      parameters:
+        query:
+          forceSave: false
+      responses:
+        "200":
+          application/json: {}
+  put_/api/v1/applications/bulk:
+    speakeasy-default-put-/api/v1-/applications/bulk:
+      responses:
+        "200":
+          application/json: {}
+  delete_/api/v1/applications/bulk: {}
+  get_/api/v1/applications/schema:
+    speakeasy-default-get-/api/v1-/applications/schema:
+      responses:
+        "200":
+          application/json: [{}, {}, {}]
+  post_/api/v1/applications/test:
+    speakeasy-default-post-/api/v1-/applications/test:
+      parameters:
+        query:
+          forceTest: false
+  post_/api/v1/applications/testall: {}
+  post_/api/v1/applications/action/{name}:
+    speakeasy-default-post-/api/v1-/applications/action/{name}:
+      parameters:
+        path:
+          name: "<value>"
+  post_/api/v1/appprofile:
+    speakeasy-default-post-/api/v1-/appprofile:
+      responses:
+        "200":
+          application/json: {}
+  get_/api/v1/appprofile:
+    speakeasy-default-get-/api/v1-/appprofile:
+      responses:
+        "200":
+          application/json: [{}, {}]
+  delete_/api/v1/appprofile/{id}:
+    speakeasy-default-delete-/api/v1-/appprofile/{id}:
+      parameters:
+        path:
+          id: 344853
+  put_/api/v1/appprofile/{id}:
+    speakeasy-default-put-/api/v1-/appprofile/{id}:
+      parameters:
+        path:
+          id: "<id>"
+      responses:
+        "200":
+          application/json: {}
+  get_/api/v1/appprofile/{id}:
+    speakeasy-default-get-/api/v1-/appprofile/{id}:
+      parameters:
+        path:
+          id: 92439
+      responses:
+        "200":
+          application/json: {}
+  get_/api/v1/appprofile/schema:
+    speakeasy-default-get-/api/v1-/appprofile/schema:
+      responses:
+        "200":
+          application/json: {}
+  get_/login: {}
+  get_/content/{path}:
+    speakeasy-default-get-/content/{path}:
+      parameters:
+        path:
+          path: "/dev"
+  get_/: {}
+  get_/{path}:
+    speakeasy-default-get-/{path}:
+      parameters:
+        path:
+          path: "/etc/defaults"
+  get_/logout: {}
+  get_/api/v1/system/backup:
+    speakeasy-default-get-/api/v1-/system/backup:
+      responses:
+        "200":
+          application/json: [{}, {}]
+  delete_/api/v1/system/backup/{id}:
+    speakeasy-default-delete-/api/v1-/system/backup/{id}:
+      parameters:
+        path:
+          id: 305836
+  post_/api/v1/system/backup/restore/{id}:
+    speakeasy-default-post-/api/v1-/system/backup/restore/{id}:
+      parameters:
+        path:
+          id: 246520
+  post_/api/v1/system/backup/restore/upload: {}
+  get_/api/v1/command/{id}:
+    speakeasy-default-get-/api/v1-/command/{id}:
+      parameters:
+        path:
+          id: 274829
+      responses:
+        "200":
+          application/json: {}
+  delete_/api/v1/command/{id}:
+    speakeasy-default-delete-/api/v1-/command/{id}:
+      parameters:
+        path:
+          id: 932632
+  post_/api/v1/command:
+    speakeasy-default-post-/api/v1-/command:
+      responses:
+        "200":
+          application/json: {}
+  get_/api/v1/command:
+    speakeasy-default-get-/api/v1-/command:
+      responses:
+        "200":
+          application/json: [{}, {}]
+  get_/api/v1/customfilter/{id}:
+    speakeasy-default-get-/api/v1-/customfilter/{id}:
+      parameters:
+        path:
+          id: 367030
+      responses:
+        "200":
+          application/json: {}
+  put_/api/v1/customfilter/{id}:
+    speakeasy-default-put-/api/v1-/customfilter/{id}:
+      parameters:
+        path:
+          id: "<id>"
+      responses:
+        "200":
+          application/json: {}
+  delete_/api/v1/customfilter/{id}:
+    speakeasy-default-delete-/api/v1-/customfilter/{id}:
+      parameters:
+        path:
+          id: 400472
+  get_/api/v1/customfilter:
+    speakeasy-default-get-/api/v1-/customfilter:
+      responses:
+        "200":
+          application/json: [{}]
+  post_/api/v1/customfilter:
+    speakeasy-default-post-/api/v1-/customfilter:
+      responses:
+        "200":
+          application/json: {}
+  put_/api/v1/config/development/{id}:
+    speakeasy-default-put-/api/v1-/config/development/{id}:
+      parameters:
+        path:
+          id: "<id>"
+      responses:
+        "200":
+          application/json: {}
+  get_/api/v1/config/development/{id}:
+    speakeasy-default-get-/api/v1-/config/development/{id}:
+      parameters:
+        path:
+          id: 820899
+      responses:
+        "200":
+          application/json: {}
+  get_/api/v1/config/development:
+    speakeasy-default-get-/api/v1-/config/development:
+      responses:
+        "200":
+          application/json: {}
+  get_/api/v1/downloadclient/{id}:
+    speakeasy-default-get-/api/v1-/downloadclient/{id}:
+      parameters:
+        path:
+          id: 335668
+      responses:
+        "200":
+          application/json: {}
+  put_/api/v1/downloadclient/{id}:
+    speakeasy-default-put-/api/v1-/downloadclient/{id}:
+      parameters:
+        path:
+          id: "<id>"
+        query:
+          forceSave: false
+      responses:
+        "200":
+          application/json: {}
+  delete_/api/v1/downloadclient/{id}:
+    speakeasy-default-delete-/api/v1-/downloadclient/{id}:
+      parameters:
+        path:
+          id: 670627
+  get_/api/v1/downloadclient:
+    speakeasy-default-get-/api/v1-/downloadclient:
+      responses:
+        "200":
+          application/json: [{}]
+  post_/api/v1/downloadclient:
+    speakeasy-default-post-/api/v1-/downloadclient:
+      parameters:
+        query:
+          forceSave: false
+      responses:
+        "200":
+          application/json: {}
+  put_/api/v1/downloadclient/bulk:
+    speakeasy-default-put-/api/v1-/downloadclient/bulk:
+      responses:
+        "200":
+          application/json: {}
+  delete_/api/v1/downloadclient/bulk: {}
+  get_/api/v1/downloadclient/schema:
+    speakeasy-default-get-/api/v1-/downloadclient/schema:
+      responses:
+        "200":
+          application/json: [{}]
+  post_/api/v1/downloadclient/test:
+    speakeasy-default-post-/api/v1-/downloadclient/test:
+      parameters:
+        query:
+          forceTest: false
+  post_/api/v1/downloadclient/testall: {}
+  post_/api/v1/downloadclient/action/{name}:
+    speakeasy-default-post-/api/v1-/downloadclient/action/{name}:
+      parameters:
+        path:
+          name: "<value>"
+  get_/api/v1/config/downloadclient/{id}:
+    speakeasy-default-get-/api/v1-/config/downloadclient/{id}:
+      parameters:
+        path:
+          id: 300484
+      responses:
+        "200":
+          application/json: {}
+  put_/api/v1/config/downloadclient/{id}:
+    speakeasy-default-put-/api/v1-/config/downloadclient/{id}:
+      parameters:
+        path:
+          id: "<id>"
+      responses:
+        "200":
+          application/json: {}
+  get_/api/v1/config/downloadclient:
+    speakeasy-default-get-/api/v1-/config/downloadclient:
+      responses:
+        "200":
+          application/json: {}
+  get_/api/v1/filesystem:
+    speakeasy-default-get-/api/v1-/filesystem:
+      parameters:
+        query:
+          includeFiles: false
+          allowFoldersWithoutTrailingSlashes: false
+  get_/api/v1/filesystem/type: {}
+  get_/api/v1/health:
+    speakeasy-default-get-/api/v1-/health:
+      responses:
+        "200":
+          application/json: [{}]
+  get_/api/v1/history:
+    speakeasy-default-get-/api/v1-/history:
+      parameters:
+        query:
+          page: 1
+          pageSize: 10
+      responses:
+        "200":
+          application/json: {}
+  get_/api/v1/history/since:
+    speakeasy-default-get-/api/v1-/history/since:
+      responses:
+        "200":
+          application/json: [{}]
+  get_/api/v1/history/indexer:
+    speakeasy-default-get-/api/v1-/history/indexer:
+      responses:
+        "200":
+          application/json: [{}]
+  get_/api/v1/config/host/{id}:
+    speakeasy-default-get-/api/v1-/config/host/{id}:
+      parameters:
+        path:
+          id: 316887
+      responses:
+        "200":
+          application/json: {}
+  put_/api/v1/config/host/{id}:
+    speakeasy-default-put-/api/v1-/config/host/{id}:
+      parameters:
+        path:
+          id: "<id>"
+      responses:
+        "200":
+          application/json: {}
+  get_/api/v1/config/host:
+    speakeasy-default-get-/api/v1-/config/host:
+      responses:
+        "200":
+          application/json: {}
+  get_/api/v1/indexer/{id}:
+    speakeasy-default-get-/api/v1-/indexer/{id}:
+      parameters:
+        path:
+          id: 596285
+      responses:
+        "200":
+          application/json: {}
+  put_/api/v1/indexer/{id}:
+    speakeasy-default-put-/api/v1-/indexer/{id}:
+      parameters:
+        path:
+          id: "<id>"
+        query:
+          forceSave: false
+      responses:
+        "200":
+          application/json: {}
+  delete_/api/v1/indexer/{id}:
+    speakeasy-default-delete-/api/v1-/indexer/{id}:
+      parameters:
+        path:
+          id: 158662
+  get_/api/v1/indexer:
+    speakeasy-default-get-/api/v1-/indexer:
+      responses:
+        "200":
+          application/json: [{}]
+  post_/api/v1/indexer:
+    speakeasy-default-post-/api/v1-/indexer:
+      parameters:
+        query:
+          forceSave: false
+      responses:
+        "200":
+          application/json: {}
+  put_/api/v1/indexer/bulk:
+    speakeasy-default-put-/api/v1-/indexer/bulk:
+      responses:
+        "200":
+          application/json: {}
+  delete_/api/v1/indexer/bulk: {}
+  get_/api/v1/indexer/schema:
+    speakeasy-default-get-/api/v1-/indexer/schema:
+      responses:
+        "200":
+          application/json: [{}]
+  post_/api/v1/indexer/test:
+    speakeasy-default-post-/api/v1-/indexer/test:
+      parameters:
+        query:
+          forceTest: false
+  post_/api/v1/indexer/testall: {}
+  post_/api/v1/indexer/action/{name}:
+    speakeasy-default-post-/api/v1-/indexer/action/{name}:
+      parameters:
+        path:
+          name: "<value>"
+  get_/api/v1/indexer/categories:
+    speakeasy-default-get-/api/v1-/indexer/categories:
+      responses:
+        "200":
+          application/json: [{}, {}, {}]
+  get_/api/v1/indexerproxy/{id}:
+    speakeasy-default-get-/api/v1-/indexerproxy/{id}:
+      parameters:
+        path:
+          id: 624797
+      responses:
+        "200":
+          application/json: {}
+  put_/api/v1/indexerproxy/{id}:
+    speakeasy-default-put-/api/v1-/indexerproxy/{id}:
+      parameters:
+        path:
+          id: "<id>"
+        query:
+          forceSave: false
+      responses:
+        "200":
+          application/json: {}
+  delete_/api/v1/indexerproxy/{id}:
+    speakeasy-default-delete-/api/v1-/indexerproxy/{id}:
+      parameters:
+        path:
+          id: 291937
+  get_/api/v1/indexerproxy:
+    speakeasy-default-get-/api/v1-/indexerproxy:
+      responses:
+        "200":
+          application/json: [{}]
+  post_/api/v1/indexerproxy:
+    speakeasy-default-post-/api/v1-/indexerproxy:
+      parameters:
+        query:
+          forceSave: false
+      responses:
+        "200":
+          application/json: {}
+  get_/api/v1/indexerproxy/schema:
+    speakeasy-default-get-/api/v1-/indexerproxy/schema:
+      responses:
+        "200":
+          application/json: [{}]
+  post_/api/v1/indexerproxy/test:
+    speakeasy-default-post-/api/v1-/indexerproxy/test:
+      parameters:
+        query:
+          forceTest: false
+  post_/api/v1/indexerproxy/testall: {}
+  post_/api/v1/indexerproxy/action/{name}:
+    speakeasy-default-post-/api/v1-/indexerproxy/action/{name}:
+      parameters:
+        path:
+          name: "<value>"
+  get_/api/v1/indexerstats:
+    speakeasy-default-get-/api/v1-/indexerstats:
+      responses:
+        "200":
+          application/json: {}
+  get_/api/v1/indexerstatus:
+    speakeasy-default-get-/api/v1-/indexerstatus:
+      responses:
+        "200":
+          application/json: [{}, {}, {}]
+  get_/api/v1/localization: {}
+  get_/api/v1/localization/options:
+    speakeasy-default-get-/api/v1-/localization/options:
+      responses:
+        "200":
+          application/json: [{}, {}, {}]
+  get_/api/v1/log:
+    speakeasy-default-get-/api/v1-/log:
+      parameters:
+        query:
+          page: 1
+          pageSize: 10
+      responses:
+        "200":
+          application/json: {}
+  get_/api/v1/log/file:
+    speakeasy-default-get-/api/v1-/log/file:
+      responses:
+        "200":
+          application/json: [{}, {}]
+  get_/api/v1/log/file/{filename}:
+    speakeasy-default-get-/api/v1-/log/file/{filename}:
+      parameters:
+        path:
+          filename: "example.file"
+      responses:
+        "200":
+          text/plain: "<value>"
+  get_/api/v1/indexer/{id}/newznab:
+    speakeasy-default-get-/api/v1-/indexer/{id}/newznab:
+      parameters:
+        path:
+          id: 395958
+        query: {}
+  get_/{id}/api:
+    speakeasy-default-get-/{id}/api:
+      parameters:
+        path:
+          id: 915193
+        query: {}
+  get_/api/v1/indexer/{id}/download:
+    speakeasy-default-get-/api/v1-/indexer/{id}/download:
+      parameters:
+        path:
+          id: 159549
+        query: {}
+  get_/{id}/download:
+    speakeasy-default-get-/{id}/download:
+      parameters:
+        path:
+          id: 531578
+        query: {}
+  get_/api/v1/notification/{id}:
+    speakeasy-default-get-/api/v1-/notification/{id}:
+      parameters:
+        path:
+          id: 383207
+      responses:
+        "200":
+          application/json: {}
+  put_/api/v1/notification/{id}:
+    speakeasy-default-put-/api/v1-/notification/{id}:
+      parameters:
+        path:
+          id: "<id>"
+        query:
+          forceSave: false
+      responses:
+        "200":
+          application/json: {}
+  delete_/api/v1/notification/{id}:
+    speakeasy-default-delete-/api/v1-/notification/{id}:
+      parameters:
+        path:
+          id: 312155
+  get_/api/v1/notification:
+    speakeasy-default-get-/api/v1-/notification:
+      responses:
+        "200":
+          application/json: [{}, {}]
+  post_/api/v1/notification:
+    speakeasy-default-post-/api/v1-/notification:
+      parameters:
+        query:
+          forceSave: false
+      responses:
+        "200":
+          application/json: {}
+  get_/api/v1/notification/schema:
+    speakeasy-default-get-/api/v1-/notification/schema:
+      responses:
+        "200":
+          application/json: [{}, {}, {}]
+  post_/api/v1/notification/test:
+    speakeasy-default-post-/api/v1-/notification/test:
+      parameters:
+        query:
+          forceTest: false
+  post_/api/v1/notification/testall: {}
+  post_/api/v1/notification/action/{name}:
+    speakeasy-default-post-/api/v1-/notification/action/{name}:
+      parameters:
+        path:
+          name: "<value>"
+  get_/ping:
+    speakeasy-default-get-/ping:
+      responses:
+        "200":
+          application/json: {}
+  head_/ping:
+    speakeasy-default-head-/ping:
+      responses:
+        "200":
+          application/json: {}
+  post_/api/v1/search:
+    speakeasy-default-post-/api/v1-/search:
+      responses:
+        "200":
+          application/json: {}
+  get_/api/v1/search:
+    speakeasy-default-get-/api/v1-/search:
+      responses:
+        "200":
+          application/json: [{}, {}]
+  post_/api/v1/search/bulk:
+    speakeasy-default-post-/api/v1-/search/bulk:
+      responses:
+        "200":
+          application/json: {}
+  get_/api/v1/system/status:
+    speakeasy-default-get-/api/v1-/system/status:
+      responses:
+        "200":
+          application/json: {}
+  get_/api/v1/system/routes: {}
+  get_/api/v1/system/routes/duplicate: {}
+  post_/api/v1/system/shutdown: {}
+  post_/api/v1/system/restart: {}
+  get_/api/v1/tag/{id}:
+    speakeasy-default-get-/api/v1-/tag/{id}:
+      parameters:
+        path:
+          id: 828174
+      responses:
+        "200":
+          application/json: {}
+  put_/api/v1/tag/{id}:
+    speakeasy-default-put-/api/v1-/tag/{id}:
+      parameters:
+        path:
+          id: "<id>"
+      responses:
+        "200":
+          application/json: {}
+  delete_/api/v1/tag/{id}:
+    speakeasy-default-delete-/api/v1-/tag/{id}:
+      parameters:
+        path:
+          id: 465312
+  get_/api/v1/tag:
+    speakeasy-default-get-/api/v1-/tag:
+      responses:
+        "200":
+          application/json: [{}, {}, {}]
+  post_/api/v1/tag:
+    speakeasy-default-post-/api/v1-/tag:
+      responses:
+        "200":
+          application/json: {}
+  get_/api/v1/tag/detail/{id}:
+    speakeasy-default-get-/api/v1-/tag/detail/{id}:
+      parameters:
+        path:
+          id: 303785
+      responses:
+        "200":
+          application/json: {}
+  get_/api/v1/tag/detail:
+    speakeasy-default-get-/api/v1-/tag/detail:
+      responses:
+        "200":
+          application/json: [{}, {}]
+  get_/api/v1/system/task:
+    speakeasy-default-get-/api/v1-/system/task:
+      responses:
+        "200":
+          application/json: [{}, {}, {}]
+  get_/api/v1/system/task/{id}:
+    speakeasy-default-get-/api/v1-/system/task/{id}:
+      parameters:
+        path:
+          id: 459582
+      responses:
+        "200":
+          application/json: {}
+  put_/api/v1/config/ui/{id}:
+    speakeasy-default-put-/api/v1-/config/ui/{id}:
+      parameters:
+        path:
+          id: "<id>"
+      responses:
+        "200":
+          application/json: {}
+  get_/api/v1/config/ui/{id}:
+    speakeasy-default-get-/api/v1-/config/ui/{id}:
+      parameters:
+        path:
+          id: 410001
+      responses:
+        "200":
+          application/json: {}
+  get_/api/v1/config/ui:
+    speakeasy-default-get-/api/v1-/config/ui:
+      responses:
+        "200":
+          application/json: {}
+  get_/api/v1/update:
+    speakeasy-default-get-/api/v1-/update:
+      responses:
+        "200":
+          application/json: [{}]
+  get_/api/v1/log/file/update:
+    speakeasy-default-get-/api/v1-/log/file/update:
+      responses:
+        "200":
+          application/json: [{}, {}]
+  get_/api/v1/log/file/update/{filename}:
+    speakeasy-default-get-/api/v1-/log/file/update/{filename}:
+      parameters:
+        path:
+          filename: "example.file"
+      responses:
+        "200":
+          text/plain: "<value>"
+examplesVersion: 1.0.2
+generatedTests: {}

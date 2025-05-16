@@ -1,0 +1,15 @@
+overlay: 1.0.0
+x-speakeasy-jsonpath: rfc9535
+info:
+  title: Speakeasy Modifications
+  version: 0.0.1
+  x-speakeasy-metadata:
+    type: speakeasy-modifications
+    before: ""
+    after: ""
+actions:
+  - target: $["paths"]["/"]["get"]["parameters"]
+    remove: true
+    x-speakeasy-metadata:
+      created_at: 1747432805089
+      type: user-edit

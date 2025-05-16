@@ -1,0 +1,20 @@
+workflowVersion: 1.0.0
+speakeasyVersion: latest
+sources:
+    Prowlarr:
+        inputs:
+            - location: https://raw.githubusercontent.com/Prowlarr/Prowlarr/develop/src/Prowlarr.Api.V1/openapi.json
+        overlays:
+            - location: .speakeasy/speakeasy-modifications-overlay.yaml
+        registry:
+            location: registry.speakeasyapi.dev/lukehagar/lukehagar/prowlarr
+targets:
+    prowlarr:
+        target: typescript
+        source: Prowlarr
+        codeSamples:
+            registry:
+                location: registry.speakeasyapi.dev/lukehagar/lukehagar/prowlarr-typescript-code-samples
+            labelOverride:
+                fixedValue: Typescript (SDK)
+            blocking: false
