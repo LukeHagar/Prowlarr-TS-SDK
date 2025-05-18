@@ -1,10 +1,21 @@
-speakeasyVersion: 1.546.1
-sources: {}
+speakeasyVersion: 1.546.2
+sources:
+    Prowlarr:
+        sourceNamespace: prowlarr
+        sourceRevisionDigest: sha256:2447bc493a5cae6d77cb39bb251a689947c143b0d248bfb70841d676a625b6ee
+        sourceBlobDigest: sha256:aabc67353440edc8bb6dc6730997ba4f966c33d09cd7b7484469094ba2542305
+        tags:
+            - latest
+            - speakeasy-sdk-regen-1747433296
+            - 1.0.0
 targets:
     prowlarr:
         source: Prowlarr
+        sourceNamespace: prowlarr
+        sourceRevisionDigest: sha256:2447bc493a5cae6d77cb39bb251a689947c143b0d248bfb70841d676a625b6ee
+        sourceBlobDigest: sha256:aabc67353440edc8bb6dc6730997ba4f966c33d09cd7b7484469094ba2542305
         codeSamplesNamespace: prowlarr-typescript-code-samples
-        codeSamplesRevisionDigest: sha256:7afc8f22dd3763349bcacd94c8ea523e1f5414b3feaa39a6c30c85fd7e687643
+        codeSamplesRevisionDigest: sha256:0fcea86138a124e88b2687b9a1926e313e555489ea7cd7f3a3a17929ee4bba95
 workflow:
     workflowVersion: 1.0.0
     speakeasyVersion: latest

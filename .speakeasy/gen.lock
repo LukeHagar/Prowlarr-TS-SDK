@@ -3,10 +3,12 @@ id: dcd1d874-ad0d-475e-9c83-6083a087fb17
 management:
   docChecksum: 9f92220db0dc81897b8a47c86bfd4b04
   docVersion: 1.0.0
-  speakeasyVersion: 1.546.1
-  generationVersion: 2.604.2
-  releaseVersion: 0.0.1
-  configChecksum: 34755fbe88f40a507b248ec6a6774196
+  speakeasyVersion: 1.546.2
+  generationVersion: 2.604.4
+  releaseVersion: 0.0.2
+  configChecksum: 99440153394327071804c9b6be469242
+  repoURL: https://github.com/LukeHagar/Prowlarr-TS-SDK.git
+  installationURL: https://github.com/LukeHagar/Prowlarr-TS-SDK
 features:
   typescript:
     additionalDependencies: 0.1.0
