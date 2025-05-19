@@ -10,7 +10,6 @@ Prowlarr: Prowlarr API docs
 ## Table of Contents
 <!-- $toc-max-depth=2 -->
 * [Prowlarr-TS-SDK](#prowlarr-ts-sdk)
-* [Prowlarr-TS-SDK](#prowlarr-ts-sdk-1)
   * [SDK Installation](#sdk-installation)
   * [Requirements](#requirements)
   * [SDK Example Usage](#sdk-example-usage)
