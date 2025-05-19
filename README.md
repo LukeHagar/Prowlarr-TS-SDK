@@ -1,5 +1,4 @@
 # Prowlarr-TS-SDK
-# Prowlarr-TS-SDK
 
 <!-- Start Summary [summary] -->
 ## Summary
