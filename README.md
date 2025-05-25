@@ -32,25 +32,25 @@ The SDK can be installed with either [npm](https://www.npmjs.com/), [pnpm](https
 ### NPM
 
 ```bash
-npm add https://github.com/LukeHagar/Prowlarr-TS-SDK
+npm add prowlarr
 ```
 
 ### PNPM
 
 ```bash
-pnpm add https://github.com/LukeHagar/Prowlarr-TS-SDK
+pnpm add prowlarr
 ```
 
 ### Bun
 
 ```bash
-bun add https://github.com/LukeHagar/Prowlarr-TS-SDK
+bun add prowlarr
 ```
 
 ### Yarn
 
 ```bash
-yarn add https://github.com/LukeHagar/Prowlarr-TS-SDK zod
+yarn add prowlarr zod
 
 # Note that Yarn does not install peer dependencies automatically. You will need
 # to install zod as shown above.
