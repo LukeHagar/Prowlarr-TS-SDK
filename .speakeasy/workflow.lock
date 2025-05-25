@@ -1,21 +1,21 @@
-speakeasyVersion: 1.546.2
+speakeasyVersion: 1.551.0
 sources:
     Prowlarr:
         sourceNamespace: prowlarr
-        sourceRevisionDigest: sha256:2447bc493a5cae6d77cb39bb251a689947c143b0d248bfb70841d676a625b6ee
+        sourceRevisionDigest: sha256:743d403888496179af82928439578f5409e151b87f00461b99ac66ea68d0ef11
         sourceBlobDigest: sha256:aabc67353440edc8bb6dc6730997ba4f966c33d09cd7b7484469094ba2542305
         tags:
             - latest
-            - speakeasy-sdk-regen-1747433296
+            - speakeasy-sdk-regen-1747669317
             - 1.0.0
 targets:
     prowlarr:
         source: Prowlarr
         sourceNamespace: prowlarr
-        sourceRevisionDigest: sha256:2447bc493a5cae6d77cb39bb251a689947c143b0d248bfb70841d676a625b6ee
+        sourceRevisionDigest: sha256:743d403888496179af82928439578f5409e151b87f00461b99ac66ea68d0ef11
         sourceBlobDigest: sha256:aabc67353440edc8bb6dc6730997ba4f966c33d09cd7b7484469094ba2542305
         codeSamplesNamespace: prowlarr-typescript-code-samples
-        codeSamplesRevisionDigest: sha256:0fcea86138a124e88b2687b9a1926e313e555489ea7cd7f3a3a17929ee4bba95
+        codeSamplesRevisionDigest: sha256:34651feb6dceb5c359f1cb988e34589e1dbf72b3c5d0da7f372da0e334d98143
 workflow:
     workflowVersion: 1.0.0
     speakeasyVersion: latest
@@ -31,6 +31,9 @@ workflow:
         prowlarr:
             target: typescript
             source: Prowlarr
+            publish:
+                npm:
+                    token: $npm_token
             codeSamples:
                 registry:
                     location: registry.speakeasyapi.dev/lukehagar/lukehagar/prowlarr-typescript-code-samples
