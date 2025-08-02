@@ -19,6 +19,7 @@
 
 ### Example Usage
 
+<!-- UsageSnippet language="typescript" operationID="get_/api/v1/notification/{id}" method="get" path="/api/v1/notification/{id}" -->
 ```typescript
 import { Prowlarr } from "prowlarr";
 
@@ -33,7 +34,6 @@ async function run() {
     id: 383207,
   });
 
-  // Handle the result
   console.log(result);
 }
 
@@ -60,15 +60,12 @@ async function run() {
   const res = await notificationGetApiV1NotificationId(prowlarr, {
     id: 383207,
   });
-
-  if (!res.ok) {
-    throw res.error;
+  if (res.ok) {
+    const { value: result } = res;
+    console.log(result);
+  } else {
+    console.log("notificationGetApiV1NotificationId failed:", res.error);
   }
-
-  const { value: result } = res;
-
-  // Handle the result
-  console.log(result);
 }
 
 run();
@@ -97,6 +94,7 @@ run();
 
 ### Example Usage
 
+<!-- UsageSnippet language="typescript" operationID="put_/api/v1/notification/{id}" method="put" path="/api/v1/notification/{id}" -->
 ```typescript
 import { Prowlarr } from "prowlarr";
 
@@ -111,7 +109,6 @@ async function run() {
     id: "<id>",
   });
 
-  // Handle the result
   console.log(result);
 }
 
@@ -138,15 +135,12 @@ async function run() {
   const res = await notificationPutApiV1NotificationId(prowlarr, {
     id: "<id>",
   });
-
-  if (!res.ok) {
-    throw res.error;
+  if (res.ok) {
+    const { value: result } = res;
+    console.log(result);
+  } else {
+    console.log("notificationPutApiV1NotificationId failed:", res.error);
   }
-
-  const { value: result } = res;
-
-  // Handle the result
-  console.log(result);
 }
 
 run();
@@ -175,6 +169,7 @@ run();
 
 ### Example Usage
 
+<!-- UsageSnippet language="typescript" operationID="delete_/api/v1/notification/{id}" method="delete" path="/api/v1/notification/{id}" -->
 ```typescript
 import { Prowlarr } from "prowlarr";
 
@@ -215,14 +210,12 @@ async function run() {
   const res = await notificationDeleteApiV1NotificationId(prowlarr, {
     id: 312155,
   });
-
-  if (!res.ok) {
-    throw res.error;
+  if (res.ok) {
+    const { value: result } = res;
+    
+  } else {
+    console.log("notificationDeleteApiV1NotificationId failed:", res.error);
   }
-
-  const { value: result } = res;
-
-  
 }
 
 run();
@@ -251,6 +244,7 @@ run();
 
 ### Example Usage
 
+<!-- UsageSnippet language="typescript" operationID="get_/api/v1/notification" method="get" path="/api/v1/notification" -->
 ```typescript
 import { Prowlarr } from "prowlarr";
 
@@ -263,7 +257,6 @@ const prowlarr = new Prowlarr({
 async function run() {
   const result = await prowlarr.notification.getApiV1Notification();
 
-  // Handle the result
   console.log(result);
 }
 
@@ -288,15 +281,12 @@ const prowlarr = new ProwlarrCore({
 
 async function run() {
   const res = await notificationGetApiV1Notification(prowlarr);
-
-  if (!res.ok) {
-    throw res.error;
+  if (res.ok) {
+    const { value: result } = res;
+    console.log(result);
+  } else {
+    console.log("notificationGetApiV1Notification failed:", res.error);
   }
-
-  const { value: result } = res;
-
-  // Handle the result
-  console.log(result);
 }
 
 run();
@@ -324,6 +314,7 @@ run();
 
 ### Example Usage
 
+<!-- UsageSnippet language="typescript" operationID="post_/api/v1/notification" method="post" path="/api/v1/notification" -->
 ```typescript
 import { Prowlarr } from "prowlarr";
 
@@ -336,7 +327,6 @@ const prowlarr = new Prowlarr({
 async function run() {
   const result = await prowlarr.notification.postApiV1Notification({});
 
-  // Handle the result
   console.log(result);
 }
 
@@ -361,15 +351,12 @@ const prowlarr = new ProwlarrCore({
 
 async function run() {
   const res = await notificationPostApiV1Notification(prowlarr, {});
-
-  if (!res.ok) {
-    throw res.error;
+  if (res.ok) {
+    const { value: result } = res;
+    console.log(result);
+  } else {
+    console.log("notificationPostApiV1Notification failed:", res.error);
   }
-
-  const { value: result } = res;
-
-  // Handle the result
-  console.log(result);
 }
 
 run();
@@ -398,6 +385,7 @@ run();
 
 ### Example Usage
 
+<!-- UsageSnippet language="typescript" operationID="get_/api/v1/notification/schema" method="get" path="/api/v1/notification/schema" -->
 ```typescript
 import { Prowlarr } from "prowlarr";
 
@@ -410,7 +398,6 @@ const prowlarr = new Prowlarr({
 async function run() {
   const result = await prowlarr.notification.getApiV1NotificationSchema();
 
-  // Handle the result
   console.log(result);
 }
 
@@ -435,15 +422,12 @@ const prowlarr = new ProwlarrCore({
 
 async function run() {
   const res = await notificationGetApiV1NotificationSchema(prowlarr);
-
-  if (!res.ok) {
-    throw res.error;
+  if (res.ok) {
+    const { value: result } = res;
+    console.log(result);
+  } else {
+    console.log("notificationGetApiV1NotificationSchema failed:", res.error);
   }
-
-  const { value: result } = res;
-
-  // Handle the result
-  console.log(result);
 }
 
 run();
@@ -471,6 +455,7 @@ run();
 
 ### Example Usage
 
+<!-- UsageSnippet language="typescript" operationID="post_/api/v1/notification/test" method="post" path="/api/v1/notification/test" -->
 ```typescript
 import { Prowlarr } from "prowlarr";
 
@@ -507,14 +492,12 @@ const prowlarr = new ProwlarrCore({
 
 async function run() {
   const res = await notificationPostApiV1NotificationTest(prowlarr, {});
-
-  if (!res.ok) {
-    throw res.error;
+  if (res.ok) {
+    const { value: result } = res;
+    
+  } else {
+    console.log("notificationPostApiV1NotificationTest failed:", res.error);
   }
-
-  const { value: result } = res;
-
-  
 }
 
 run();
@@ -543,6 +526,7 @@ run();
 
 ### Example Usage
 
+<!-- UsageSnippet language="typescript" operationID="post_/api/v1/notification/testall" method="post" path="/api/v1/notification/testall" -->
 ```typescript
 import { Prowlarr } from "prowlarr";
 
@@ -579,14 +563,12 @@ const prowlarr = new ProwlarrCore({
 
 async function run() {
   const res = await notificationPostApiV1NotificationTestall(prowlarr);
-
-  if (!res.ok) {
-    throw res.error;
+  if (res.ok) {
+    const { value: result } = res;
+    
+  } else {
+    console.log("notificationPostApiV1NotificationTestall failed:", res.error);
   }
-
-  const { value: result } = res;
-
-  
 }
 
 run();
@@ -614,6 +596,7 @@ run();
 
 ### Example Usage
 
+<!-- UsageSnippet language="typescript" operationID="post_/api/v1/notification/action/{name}" method="post" path="/api/v1/notification/action/{name}" -->
 ```typescript
 import { Prowlarr } from "prowlarr";
 
@@ -654,14 +637,12 @@ async function run() {
   const res = await notificationPostApiV1NotificationActionName(prowlarr, {
     name: "<value>",
   });
-
-  if (!res.ok) {
-    throw res.error;
+  if (res.ok) {
+    const { value: result } = res;
+    
+  } else {
+    console.log("notificationPostApiV1NotificationActionName failed:", res.error);
   }
-
-  const { value: result } = res;
-
-  
 }
 
 run();

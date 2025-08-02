@@ -3,7 +3,7 @@
 ## Example Usage
 
 ```typescript
-import { CustomFilterResource } from "prowlarr";
+import { CustomFilterResource } from "prowlarr/models";
 
 let value: CustomFilterResource = {};
 ```

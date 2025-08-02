@@ -13,6 +13,7 @@
 
 ### Example Usage
 
+<!-- UsageSnippet language="typescript" operationID="put_/api/v1/config/ui/{id}" method="put" path="/api/v1/config/ui/{id}" -->
 ```typescript
 import { Prowlarr } from "prowlarr";
 
@@ -27,7 +28,6 @@ async function run() {
     id: "<id>",
   });
 
-  // Handle the result
   console.log(result);
 }
 
@@ -54,15 +54,12 @@ async function run() {
   const res = await uiConfigPutApiV1ConfigUiId(prowlarr, {
     id: "<id>",
   });
-
-  if (!res.ok) {
-    throw res.error;
+  if (res.ok) {
+    const { value: result } = res;
+    console.log(result);
+  } else {
+    console.log("uiConfigPutApiV1ConfigUiId failed:", res.error);
   }
-
-  const { value: result } = res;
-
-  // Handle the result
-  console.log(result);
 }
 
 run();
@@ -91,6 +88,7 @@ run();
 
 ### Example Usage
 
+<!-- UsageSnippet language="typescript" operationID="get_/api/v1/config/ui/{id}" method="get" path="/api/v1/config/ui/{id}" -->
 ```typescript
 import { Prowlarr } from "prowlarr";
 
@@ -105,7 +103,6 @@ async function run() {
     id: 410001,
   });
 
-  // Handle the result
   console.log(result);
 }
 
@@ -132,15 +129,12 @@ async function run() {
   const res = await uiConfigGetApiV1ConfigUiId(prowlarr, {
     id: 410001,
   });
-
-  if (!res.ok) {
-    throw res.error;
+  if (res.ok) {
+    const { value: result } = res;
+    console.log(result);
+  } else {
+    console.log("uiConfigGetApiV1ConfigUiId failed:", res.error);
   }
-
-  const { value: result } = res;
-
-  // Handle the result
-  console.log(result);
 }
 
 run();
@@ -169,6 +163,7 @@ run();
 
 ### Example Usage
 
+<!-- UsageSnippet language="typescript" operationID="get_/api/v1/config/ui" method="get" path="/api/v1/config/ui" -->
 ```typescript
 import { Prowlarr } from "prowlarr";
 
@@ -181,7 +176,6 @@ const prowlarr = new Prowlarr({
 async function run() {
   const result = await prowlarr.uiConfig.getApiV1ConfigUi();
 
-  // Handle the result
   console.log(result);
 }
 
@@ -206,15 +200,12 @@ const prowlarr = new ProwlarrCore({
 
 async function run() {
   const res = await uiConfigGetApiV1ConfigUi(prowlarr);
-
-  if (!res.ok) {
-    throw res.error;
+  if (res.ok) {
+    const { value: result } = res;
+    console.log(result);
+  } else {
+    console.log("uiConfigGetApiV1ConfigUi failed:", res.error);
   }
-
-  const { value: result } = res;
-
-  // Handle the result
-  console.log(result);
 }
 
 run();

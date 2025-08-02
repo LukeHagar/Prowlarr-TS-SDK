@@ -3,7 +3,7 @@
 ## Example Usage
 
 ```typescript
-import { HistoryEventType } from "prowlarr";
+import { HistoryEventType } from "prowlarr/models";
 
 let value: HistoryEventType = "indexerRss";
 ```

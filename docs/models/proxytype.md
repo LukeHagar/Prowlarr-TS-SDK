@@ -3,7 +3,7 @@
 ## Example Usage
 
 ```typescript
-import { ProxyType } from "prowlarr";
+import { ProxyType } from "prowlarr/models";
 
 let value: ProxyType = "http";
 ```

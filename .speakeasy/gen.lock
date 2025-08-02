@@ -1,20 +1,20 @@
 lockVersion: 2.0.0
 id: dcd1d874-ad0d-475e-9c83-6083a087fb17
 management:
-  docChecksum: 9f92220db0dc81897b8a47c86bfd4b04
+  docChecksum: 08b870054e997ae9ac243fa522fddc6f
   docVersion: 1.0.0
-  speakeasyVersion: 1.551.0
-  generationVersion: 2.610.0
-  releaseVersion: 0.0.3
-  configChecksum: 5d811f2dd27627fd6d7483654d879abe
+  speakeasyVersion: 1.596.0
+  generationVersion: 2.672.0
+  releaseVersion: 0.1.0
+  configChecksum: 9e83bb4df63024a5d203047e222e194c
   repoURL: https://github.com/LukeHagar/Prowlarr-TS-SDK.git
   installationURL: https://github.com/LukeHagar/Prowlarr-TS-SDK
   published: true
 features:
   typescript:
     additionalDependencies: 0.1.0
-    constsAndDefaults: 0.1.11
-    core: 3.21.9
+    constsAndDefaults: 0.1.12
+    core: 3.21.19
     defaultEnabledRetries: 0.1.0
     devContainers: 2.90.0
     enumUnions: 0.1.0
@@ -23,11 +23,11 @@ features:
     globalSecurityCallbacks: 0.1.0
     globalServerURLs: 2.82.5
     inputOutputModels: 2.82.0
-    mcpServer: 0.9.2
+    mcpServer: 0.9.3
     nullables: 0.1.1
     responseFormat: 0.2.3
     retries: 2.83.0
-    sdkHooks: 0.2.0
+    sdkHooks: 0.3.0
 generatedFiles:
   - .devcontainer/README.md
   - .devcontainer/devcontainer.json
@@ -219,6 +219,10 @@ generatedFiles:
   - docs/sdks/update/README.md
   - docs/sdks/updatelogfile/README.md
   - eslint.config.mjs
+  - examples/.env.template
+  - examples/README.md
+  - examples/apiInfoGetApi.example.ts
+  - examples/package.json
   - jsr.json
   - package.json
   - src/core.ts
@@ -541,6 +545,8 @@ generatedFiles:
   - src/models/errors/apierror.ts
   - src/models/errors/httpclienterrors.ts
   - src/models/errors/index.ts
+  - src/models/errors/prowlarrerror.ts
+  - src/models/errors/responsevalidationerror.ts
   - src/models/errors/sdkvalidationerror.ts
   - src/models/field.ts
   - src/models/healthcheckresult.ts

@@ -3,7 +3,7 @@
 ## Example Usage
 
 ```typescript
-import { TaskResource } from "prowlarr";
+import { TaskResource } from "prowlarr/models";
 
 let value: TaskResource = {};
 ```

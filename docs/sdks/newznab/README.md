@@ -14,6 +14,7 @@
 
 ### Example Usage
 
+<!-- UsageSnippet language="typescript" operationID="get_/api/v1/indexer/{id}/newznab" method="get" path="/api/v1/indexer/{id}/newznab" -->
 ```typescript
 import { Prowlarr } from "prowlarr";
 
@@ -54,14 +55,12 @@ async function run() {
   const res = await newznabGetApiV1IndexerIdNewznab(prowlarr, {
     id: 395958,
   });
-
-  if (!res.ok) {
-    throw res.error;
+  if (res.ok) {
+    const { value: result } = res;
+    
+  } else {
+    console.log("newznabGetApiV1IndexerIdNewznab failed:", res.error);
   }
-
-  const { value: result } = res;
-
-  
 }
 
 run();
@@ -90,6 +89,7 @@ run();
 
 ### Example Usage
 
+<!-- UsageSnippet language="typescript" operationID="get_/{id}/api" method="get" path="/{id}/api" -->
 ```typescript
 import { Prowlarr } from "prowlarr";
 
@@ -130,14 +130,12 @@ async function run() {
   const res = await newznabGetIdApi(prowlarr, {
     id: 915193,
   });
-
-  if (!res.ok) {
-    throw res.error;
+  if (res.ok) {
+    const { value: result } = res;
+    
+  } else {
+    console.log("newznabGetIdApi failed:", res.error);
   }
-
-  const { value: result } = res;
-
-  
 }
 
 run();
@@ -166,6 +164,7 @@ run();
 
 ### Example Usage
 
+<!-- UsageSnippet language="typescript" operationID="get_/api/v1/indexer/{id}/download" method="get" path="/api/v1/indexer/{id}/download" -->
 ```typescript
 import { Prowlarr } from "prowlarr";
 
@@ -206,14 +205,12 @@ async function run() {
   const res = await newznabGetApiV1IndexerIdDownload(prowlarr, {
     id: 159549,
   });
-
-  if (!res.ok) {
-    throw res.error;
+  if (res.ok) {
+    const { value: result } = res;
+    
+  } else {
+    console.log("newznabGetApiV1IndexerIdDownload failed:", res.error);
   }
-
-  const { value: result } = res;
-
-  
 }
 
 run();
@@ -242,6 +239,7 @@ run();
 
 ### Example Usage
 
+<!-- UsageSnippet language="typescript" operationID="get_/{id}/download" method="get" path="/{id}/download" -->
 ```typescript
 import { Prowlarr } from "prowlarr";
 
@@ -282,14 +280,12 @@ async function run() {
   const res = await newznabGetIdDownload(prowlarr, {
     id: 531578,
   });
-
-  if (!res.ok) {
-    throw res.error;
+  if (res.ok) {
+    const { value: result } = res;
+    
+  } else {
+    console.log("newznabGetIdDownload failed:", res.error);
   }
-
-  const { value: result } = res;
-
-  
 }
 
 run();

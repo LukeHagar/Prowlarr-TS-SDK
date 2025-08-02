@@ -12,6 +12,7 @@
 
 ### Example Usage
 
+<!-- UsageSnippet language="typescript" operationID="get_/api/v1/filesystem" method="get" path="/api/v1/filesystem" -->
 ```typescript
 import { Prowlarr } from "prowlarr";
 
@@ -48,14 +49,12 @@ const prowlarr = new ProwlarrCore({
 
 async function run() {
   const res = await fileSystemGetApiV1Filesystem(prowlarr, {});
-
-  if (!res.ok) {
-    throw res.error;
+  if (res.ok) {
+    const { value: result } = res;
+    
+  } else {
+    console.log("fileSystemGetApiV1Filesystem failed:", res.error);
   }
-
-  const { value: result } = res;
-
-  
 }
 
 run();
@@ -84,6 +83,7 @@ run();
 
 ### Example Usage
 
+<!-- UsageSnippet language="typescript" operationID="get_/api/v1/filesystem/type" method="get" path="/api/v1/filesystem/type" -->
 ```typescript
 import { Prowlarr } from "prowlarr";
 
@@ -120,14 +120,12 @@ const prowlarr = new ProwlarrCore({
 
 async function run() {
   const res = await fileSystemGetApiV1FilesystemType(prowlarr, {});
-
-  if (!res.ok) {
-    throw res.error;
+  if (res.ok) {
+    const { value: result } = res;
+    
+  } else {
+    console.log("fileSystemGetApiV1FilesystemType failed:", res.error);
   }
-
-  const { value: result } = res;
-
-  
 }
 
 run();

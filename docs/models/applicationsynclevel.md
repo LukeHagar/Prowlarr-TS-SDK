@@ -3,7 +3,7 @@
 ## Example Usage
 
 ```typescript
-import { ApplicationSyncLevel } from "prowlarr";
+import { ApplicationSyncLevel } from "prowlarr/models";
 
 let value: ApplicationSyncLevel = "addOnly";
 ```

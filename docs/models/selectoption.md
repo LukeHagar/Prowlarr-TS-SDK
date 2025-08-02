@@ -3,7 +3,7 @@
 ## Example Usage
 
 ```typescript
-import { SelectOption } from "prowlarr";
+import { SelectOption } from "prowlarr/models";
 
 let value: SelectOption = {};
 ```

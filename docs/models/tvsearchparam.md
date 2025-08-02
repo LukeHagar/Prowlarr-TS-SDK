@@ -3,7 +3,7 @@
 ## Example Usage
 
 ```typescript
-import { TvSearchParam } from "prowlarr";
+import { TvSearchParam } from "prowlarr/models";
 
 let value: TvSearchParam = "tvMazeId";
 ```

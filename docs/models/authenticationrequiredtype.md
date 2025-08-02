@@ -3,7 +3,7 @@
 ## Example Usage
 
 ```typescript
-import { AuthenticationRequiredType } from "prowlarr";
+import { AuthenticationRequiredType } from "prowlarr/models";
 
 let value: AuthenticationRequiredType = "enabled";
 ```

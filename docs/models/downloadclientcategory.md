@@ -3,7 +3,7 @@
 ## Example Usage
 
 ```typescript
-import { DownloadClientCategory } from "prowlarr";
+import { DownloadClientCategory } from "prowlarr/models";
 
 let value: DownloadClientCategory = {};
 ```

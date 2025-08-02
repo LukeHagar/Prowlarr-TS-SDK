@@ -14,6 +14,7 @@
 
 ### Example Usage
 
+<!-- UsageSnippet language="typescript" operationID="get_/login" method="get" path="/login" -->
 ```typescript
 import { Prowlarr } from "prowlarr";
 
@@ -50,14 +51,12 @@ const prowlarr = new ProwlarrCore({
 
 async function run() {
   const res = await staticResourceGetLogin(prowlarr);
-
-  if (!res.ok) {
-    throw res.error;
+  if (res.ok) {
+    const { value: result } = res;
+    
+  } else {
+    console.log("staticResourceGetLogin failed:", res.error);
   }
-
-  const { value: result } = res;
-
-  
 }
 
 run();
@@ -85,6 +84,7 @@ run();
 
 ### Example Usage
 
+<!-- UsageSnippet language="typescript" operationID="get_/content/{path}" method="get" path="/content/{path}" -->
 ```typescript
 import { Prowlarr } from "prowlarr";
 
@@ -125,14 +125,12 @@ async function run() {
   const res = await staticResourceGetContentPath(prowlarr, {
     path: "/dev",
   });
-
-  if (!res.ok) {
-    throw res.error;
+  if (res.ok) {
+    const { value: result } = res;
+    
+  } else {
+    console.log("staticResourceGetContentPath failed:", res.error);
   }
-
-  const { value: result } = res;
-
-  
 }
 
 run();
@@ -161,6 +159,7 @@ run();
 
 ### Example Usage
 
+<!-- UsageSnippet language="typescript" operationID="get_/" method="get" path="/" -->
 ```typescript
 import { Prowlarr } from "prowlarr";
 
@@ -197,14 +196,12 @@ const prowlarr = new ProwlarrCore({
 
 async function run() {
   const res = await staticResourceGet(prowlarr);
-
-  if (!res.ok) {
-    throw res.error;
+  if (res.ok) {
+    const { value: result } = res;
+    
+  } else {
+    console.log("staticResourceGet failed:", res.error);
   }
-
-  const { value: result } = res;
-
-  
 }
 
 run();
@@ -232,6 +229,7 @@ run();
 
 ### Example Usage
 
+<!-- UsageSnippet language="typescript" operationID="get_/{path}" method="get" path="/{path}" -->
 ```typescript
 import { Prowlarr } from "prowlarr";
 
@@ -272,14 +270,12 @@ async function run() {
   const res = await staticResourceGetPath(prowlarr, {
     path: "/etc/defaults",
   });
-
-  if (!res.ok) {
-    throw res.error;
+  if (res.ok) {
+    const { value: result } = res;
+    
+  } else {
+    console.log("staticResourceGetPath failed:", res.error);
   }
-
-  const { value: result } = res;
-
-  
 }
 
 run();

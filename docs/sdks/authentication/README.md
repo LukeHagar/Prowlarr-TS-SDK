@@ -11,6 +11,7 @@
 
 ### Example Usage
 
+<!-- UsageSnippet language="typescript" operationID="get_/logout" method="get" path="/logout" -->
 ```typescript
 import { Prowlarr } from "prowlarr";
 
@@ -47,14 +48,12 @@ const prowlarr = new ProwlarrCore({
 
 async function run() {
   const res = await authenticationGetLogout(prowlarr);
-
-  if (!res.ok) {
-    throw res.error;
+  if (res.ok) {
+    const { value: result } = res;
+    
+  } else {
+    console.log("authenticationGetLogout failed:", res.error);
   }
-
-  const { value: result } = res;
-
-  
 }
 
 run();

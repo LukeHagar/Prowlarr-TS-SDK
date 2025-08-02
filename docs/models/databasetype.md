@@ -3,7 +3,7 @@
 ## Example Usage
 
 ```typescript
-import { DatabaseType } from "prowlarr";
+import { DatabaseType } from "prowlarr/models";
 
 let value: DatabaseType = "sqLite";
 ```

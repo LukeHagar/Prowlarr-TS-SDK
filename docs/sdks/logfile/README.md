@@ -12,6 +12,7 @@
 
 ### Example Usage
 
+<!-- UsageSnippet language="typescript" operationID="get_/api/v1/log/file" method="get" path="/api/v1/log/file" -->
 ```typescript
 import { Prowlarr } from "prowlarr";
 
@@ -24,7 +25,6 @@ const prowlarr = new Prowlarr({
 async function run() {
   const result = await prowlarr.logFile.getApiV1LogFile();
 
-  // Handle the result
   console.log(result);
 }
 
@@ -49,15 +49,12 @@ const prowlarr = new ProwlarrCore({
 
 async function run() {
   const res = await logFileGetApiV1LogFile(prowlarr);
-
-  if (!res.ok) {
-    throw res.error;
+  if (res.ok) {
+    const { value: result } = res;
+    console.log(result);
+  } else {
+    console.log("logFileGetApiV1LogFile failed:", res.error);
   }
-
-  const { value: result } = res;
-
-  // Handle the result
-  console.log(result);
 }
 
 run();
@@ -85,6 +82,7 @@ run();
 
 ### Example Usage
 
+<!-- UsageSnippet language="typescript" operationID="get_/api/v1/log/file/{filename}" method="get" path="/api/v1/log/file/{filename}" -->
 ```typescript
 import { Prowlarr } from "prowlarr";
 
@@ -99,7 +97,6 @@ async function run() {
     filename: "example.file",
   });
 
-  // Handle the result
   console.log(result);
 }
 
@@ -126,15 +123,12 @@ async function run() {
   const res = await logFileGetApiV1LogFileFilename(prowlarr, {
     filename: "example.file",
   });
-
-  if (!res.ok) {
-    throw res.error;
+  if (res.ok) {
+    const { value: result } = res;
+    console.log(result);
+  } else {
+    console.log("logFileGetApiV1LogFileFilename failed:", res.error);
   }
-
-  const { value: result } = res;
-
-  // Handle the result
-  console.log(result);
 }
 
 run();

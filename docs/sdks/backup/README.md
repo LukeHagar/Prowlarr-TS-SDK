@@ -14,6 +14,7 @@
 
 ### Example Usage
 
+<!-- UsageSnippet language="typescript" operationID="get_/api/v1/system/backup" method="get" path="/api/v1/system/backup" -->
 ```typescript
 import { Prowlarr } from "prowlarr";
 
@@ -26,7 +27,6 @@ const prowlarr = new Prowlarr({
 async function run() {
   const result = await prowlarr.backup.getApiV1SystemBackup();
 
-  // Handle the result
   console.log(result);
 }
 
@@ -51,15 +51,12 @@ const prowlarr = new ProwlarrCore({
 
 async function run() {
   const res = await backupGetApiV1SystemBackup(prowlarr);
-
-  if (!res.ok) {
-    throw res.error;
+  if (res.ok) {
+    const { value: result } = res;
+    console.log(result);
+  } else {
+    console.log("backupGetApiV1SystemBackup failed:", res.error);
   }
-
-  const { value: result } = res;
-
-  // Handle the result
-  console.log(result);
 }
 
 run();
@@ -87,6 +84,7 @@ run();
 
 ### Example Usage
 
+<!-- UsageSnippet language="typescript" operationID="delete_/api/v1/system/backup/{id}" method="delete" path="/api/v1/system/backup/{id}" -->
 ```typescript
 import { Prowlarr } from "prowlarr";
 
@@ -127,14 +125,12 @@ async function run() {
   const res = await backupDeleteApiV1SystemBackupId(prowlarr, {
     id: 305836,
   });
-
-  if (!res.ok) {
-    throw res.error;
+  if (res.ok) {
+    const { value: result } = res;
+    
+  } else {
+    console.log("backupDeleteApiV1SystemBackupId failed:", res.error);
   }
-
-  const { value: result } = res;
-
-  
 }
 
 run();
@@ -163,6 +159,7 @@ run();
 
 ### Example Usage
 
+<!-- UsageSnippet language="typescript" operationID="post_/api/v1/system/backup/restore/{id}" method="post" path="/api/v1/system/backup/restore/{id}" -->
 ```typescript
 import { Prowlarr } from "prowlarr";
 
@@ -203,14 +200,12 @@ async function run() {
   const res = await backupPostApiV1SystemBackupRestoreId(prowlarr, {
     id: 246520,
   });
-
-  if (!res.ok) {
-    throw res.error;
+  if (res.ok) {
+    const { value: result } = res;
+    
+  } else {
+    console.log("backupPostApiV1SystemBackupRestoreId failed:", res.error);
   }
-
-  const { value: result } = res;
-
-  
 }
 
 run();
@@ -239,6 +234,7 @@ run();
 
 ### Example Usage
 
+<!-- UsageSnippet language="typescript" operationID="post_/api/v1/system/backup/restore/upload" method="post" path="/api/v1/system/backup/restore/upload" -->
 ```typescript
 import { Prowlarr } from "prowlarr";
 
@@ -275,14 +271,12 @@ const prowlarr = new ProwlarrCore({
 
 async function run() {
   const res = await backupPostApiV1SystemBackupRestoreUpload(prowlarr);
-
-  if (!res.ok) {
-    throw res.error;
+  if (res.ok) {
+    const { value: result } = res;
+    
+  } else {
+    console.log("backupPostApiV1SystemBackupRestoreUpload failed:", res.error);
   }
-
-  const { value: result } = res;
-
-  
 }
 
 run();
