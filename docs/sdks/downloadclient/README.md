@@ -21,6 +21,7 @@
 
 ### Example Usage
 
+<!-- UsageSnippet language="typescript" operationID="get_/api/v1/downloadclient/{id}" method="get" path="/api/v1/downloadclient/{id}" -->
 ```typescript
 import { Prowlarr } from "prowlarr";
 
@@ -35,7 +36,6 @@ async function run() {
     id: 335668,
   });
 
-  // Handle the result
   console.log(result);
 }
 
@@ -62,15 +62,12 @@ async function run() {
   const res = await downloadClientGetApiV1DownloadclientId(prowlarr, {
     id: 335668,
   });
-
-  if (!res.ok) {
-    throw res.error;
+  if (res.ok) {
+    const { value: result } = res;
+    console.log(result);
+  } else {
+    console.log("downloadClientGetApiV1DownloadclientId failed:", res.error);
   }
-
-  const { value: result } = res;
-
-  // Handle the result
-  console.log(result);
 }
 
 run();
@@ -99,6 +96,7 @@ run();
 
 ### Example Usage
 
+<!-- UsageSnippet language="typescript" operationID="put_/api/v1/downloadclient/{id}" method="put" path="/api/v1/downloadclient/{id}" -->
 ```typescript
 import { Prowlarr } from "prowlarr";
 
@@ -113,7 +111,6 @@ async function run() {
     id: "<id>",
   });
 
-  // Handle the result
   console.log(result);
 }
 
@@ -140,15 +137,12 @@ async function run() {
   const res = await downloadClientPutApiV1DownloadclientId(prowlarr, {
     id: "<id>",
   });
-
-  if (!res.ok) {
-    throw res.error;
+  if (res.ok) {
+    const { value: result } = res;
+    console.log(result);
+  } else {
+    console.log("downloadClientPutApiV1DownloadclientId failed:", res.error);
   }
-
-  const { value: result } = res;
-
-  // Handle the result
-  console.log(result);
 }
 
 run();
@@ -177,6 +171,7 @@ run();
 
 ### Example Usage
 
+<!-- UsageSnippet language="typescript" operationID="delete_/api/v1/downloadclient/{id}" method="delete" path="/api/v1/downloadclient/{id}" -->
 ```typescript
 import { Prowlarr } from "prowlarr";
 
@@ -217,14 +212,12 @@ async function run() {
   const res = await downloadClientDeleteApiV1DownloadclientId(prowlarr, {
     id: 670627,
   });
-
-  if (!res.ok) {
-    throw res.error;
+  if (res.ok) {
+    const { value: result } = res;
+    
+  } else {
+    console.log("downloadClientDeleteApiV1DownloadclientId failed:", res.error);
   }
-
-  const { value: result } = res;
-
-  
 }
 
 run();
@@ -253,6 +246,7 @@ run();
 
 ### Example Usage
 
+<!-- UsageSnippet language="typescript" operationID="get_/api/v1/downloadclient" method="get" path="/api/v1/downloadclient" -->
 ```typescript
 import { Prowlarr } from "prowlarr";
 
@@ -265,7 +259,6 @@ const prowlarr = new Prowlarr({
 async function run() {
   const result = await prowlarr.downloadClient.getApiV1Downloadclient();
 
-  // Handle the result
   console.log(result);
 }
 
@@ -290,15 +283,12 @@ const prowlarr = new ProwlarrCore({
 
 async function run() {
   const res = await downloadClientGetApiV1Downloadclient(prowlarr);
-
-  if (!res.ok) {
-    throw res.error;
+  if (res.ok) {
+    const { value: result } = res;
+    console.log(result);
+  } else {
+    console.log("downloadClientGetApiV1Downloadclient failed:", res.error);
   }
-
-  const { value: result } = res;
-
-  // Handle the result
-  console.log(result);
 }
 
 run();
@@ -326,6 +316,7 @@ run();
 
 ### Example Usage
 
+<!-- UsageSnippet language="typescript" operationID="post_/api/v1/downloadclient" method="post" path="/api/v1/downloadclient" -->
 ```typescript
 import { Prowlarr } from "prowlarr";
 
@@ -338,7 +329,6 @@ const prowlarr = new Prowlarr({
 async function run() {
   const result = await prowlarr.downloadClient.postApiV1Downloadclient({});
 
-  // Handle the result
   console.log(result);
 }
 
@@ -363,15 +353,12 @@ const prowlarr = new ProwlarrCore({
 
 async function run() {
   const res = await downloadClientPostApiV1Downloadclient(prowlarr, {});
-
-  if (!res.ok) {
-    throw res.error;
+  if (res.ok) {
+    const { value: result } = res;
+    console.log(result);
+  } else {
+    console.log("downloadClientPostApiV1Downloadclient failed:", res.error);
   }
-
-  const { value: result } = res;
-
-  // Handle the result
-  console.log(result);
 }
 
 run();
@@ -400,6 +387,7 @@ run();
 
 ### Example Usage
 
+<!-- UsageSnippet language="typescript" operationID="put_/api/v1/downloadclient/bulk" method="put" path="/api/v1/downloadclient/bulk" -->
 ```typescript
 import { Prowlarr } from "prowlarr";
 
@@ -412,7 +400,6 @@ const prowlarr = new Prowlarr({
 async function run() {
   const result = await prowlarr.downloadClient.putApiV1DownloadclientBulk();
 
-  // Handle the result
   console.log(result);
 }
 
@@ -437,15 +424,12 @@ const prowlarr = new ProwlarrCore({
 
 async function run() {
   const res = await downloadClientPutApiV1DownloadclientBulk(prowlarr);
-
-  if (!res.ok) {
-    throw res.error;
+  if (res.ok) {
+    const { value: result } = res;
+    console.log(result);
+  } else {
+    console.log("downloadClientPutApiV1DownloadclientBulk failed:", res.error);
   }
-
-  const { value: result } = res;
-
-  // Handle the result
-  console.log(result);
 }
 
 run();
@@ -474,6 +458,7 @@ run();
 
 ### Example Usage
 
+<!-- UsageSnippet language="typescript" operationID="delete_/api/v1/downloadclient/bulk" method="delete" path="/api/v1/downloadclient/bulk" -->
 ```typescript
 import { Prowlarr } from "prowlarr";
 
@@ -510,14 +495,12 @@ const prowlarr = new ProwlarrCore({
 
 async function run() {
   const res = await downloadClientDeleteApiV1DownloadclientBulk(prowlarr);
-
-  if (!res.ok) {
-    throw res.error;
+  if (res.ok) {
+    const { value: result } = res;
+    
+  } else {
+    console.log("downloadClientDeleteApiV1DownloadclientBulk failed:", res.error);
   }
-
-  const { value: result } = res;
-
-  
 }
 
 run();
@@ -546,6 +529,7 @@ run();
 
 ### Example Usage
 
+<!-- UsageSnippet language="typescript" operationID="get_/api/v1/downloadclient/schema" method="get" path="/api/v1/downloadclient/schema" -->
 ```typescript
 import { Prowlarr } from "prowlarr";
 
@@ -558,7 +542,6 @@ const prowlarr = new Prowlarr({
 async function run() {
   const result = await prowlarr.downloadClient.getApiV1DownloadclientSchema();
 
-  // Handle the result
   console.log(result);
 }
 
@@ -583,15 +566,12 @@ const prowlarr = new ProwlarrCore({
 
 async function run() {
   const res = await downloadClientGetApiV1DownloadclientSchema(prowlarr);
-
-  if (!res.ok) {
-    throw res.error;
+  if (res.ok) {
+    const { value: result } = res;
+    console.log(result);
+  } else {
+    console.log("downloadClientGetApiV1DownloadclientSchema failed:", res.error);
   }
-
-  const { value: result } = res;
-
-  // Handle the result
-  console.log(result);
 }
 
 run();
@@ -619,6 +599,7 @@ run();
 
 ### Example Usage
 
+<!-- UsageSnippet language="typescript" operationID="post_/api/v1/downloadclient/test" method="post" path="/api/v1/downloadclient/test" -->
 ```typescript
 import { Prowlarr } from "prowlarr";
 
@@ -655,14 +636,12 @@ const prowlarr = new ProwlarrCore({
 
 async function run() {
   const res = await downloadClientPostApiV1DownloadclientTest(prowlarr, {});
-
-  if (!res.ok) {
-    throw res.error;
+  if (res.ok) {
+    const { value: result } = res;
+    
+  } else {
+    console.log("downloadClientPostApiV1DownloadclientTest failed:", res.error);
   }
-
-  const { value: result } = res;
-
-  
 }
 
 run();
@@ -691,6 +670,7 @@ run();
 
 ### Example Usage
 
+<!-- UsageSnippet language="typescript" operationID="post_/api/v1/downloadclient/testall" method="post" path="/api/v1/downloadclient/testall" -->
 ```typescript
 import { Prowlarr } from "prowlarr";
 
@@ -727,14 +707,12 @@ const prowlarr = new ProwlarrCore({
 
 async function run() {
   const res = await downloadClientPostApiV1DownloadclientTestall(prowlarr);
-
-  if (!res.ok) {
-    throw res.error;
+  if (res.ok) {
+    const { value: result } = res;
+    
+  } else {
+    console.log("downloadClientPostApiV1DownloadclientTestall failed:", res.error);
   }
-
-  const { value: result } = res;
-
-  
 }
 
 run();
@@ -762,6 +740,7 @@ run();
 
 ### Example Usage
 
+<!-- UsageSnippet language="typescript" operationID="post_/api/v1/downloadclient/action/{name}" method="post" path="/api/v1/downloadclient/action/{name}" -->
 ```typescript
 import { Prowlarr } from "prowlarr";
 
@@ -802,14 +781,12 @@ async function run() {
   const res = await downloadClientPostApiV1DownloadclientActionName(prowlarr, {
     name: "<value>",
   });
-
-  if (!res.ok) {
-    throw res.error;
+  if (res.ok) {
+    const { value: result } = res;
+    
+  } else {
+    console.log("downloadClientPostApiV1DownloadclientActionName failed:", res.error);
   }
-
-  const { value: result } = res;
-
-  
 }
 
 run();

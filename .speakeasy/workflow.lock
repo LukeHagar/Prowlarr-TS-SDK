@@ -1,21 +1,21 @@
-speakeasyVersion: 1.551.0
+speakeasyVersion: 1.596.0
 sources:
     Prowlarr:
         sourceNamespace: prowlarr
-        sourceRevisionDigest: sha256:743d403888496179af82928439578f5409e151b87f00461b99ac66ea68d0ef11
-        sourceBlobDigest: sha256:aabc67353440edc8bb6dc6730997ba4f966c33d09cd7b7484469094ba2542305
+        sourceRevisionDigest: sha256:6baa456f48bba602729461f829069b37adfc8e86fd4d1e4e4d1813b05d5c051f
+        sourceBlobDigest: sha256:8fae16984135f79875d4bb019b70934a17031383dc741f05e804608d97228476
         tags:
             - latest
-            - speakeasy-sdk-regen-1747669317
+            - speakeasy-sdk-regen-1752107540
             - 1.0.0
 targets:
     prowlarr:
         source: Prowlarr
         sourceNamespace: prowlarr
-        sourceRevisionDigest: sha256:743d403888496179af82928439578f5409e151b87f00461b99ac66ea68d0ef11
-        sourceBlobDigest: sha256:aabc67353440edc8bb6dc6730997ba4f966c33d09cd7b7484469094ba2542305
+        sourceRevisionDigest: sha256:6baa456f48bba602729461f829069b37adfc8e86fd4d1e4e4d1813b05d5c051f
+        sourceBlobDigest: sha256:8fae16984135f79875d4bb019b70934a17031383dc741f05e804608d97228476
         codeSamplesNamespace: prowlarr-typescript-code-samples
-        codeSamplesRevisionDigest: sha256:34651feb6dceb5c359f1cb988e34589e1dbf72b3c5d0da7f372da0e334d98143
+        codeSamplesRevisionDigest: sha256:3d53161a9899cbfc0d9547bc9a8d709f513fd1aabd643f7061b955cb8b8b262e
 workflow:
     workflowVersion: 1.0.0
     speakeasyVersion: latest

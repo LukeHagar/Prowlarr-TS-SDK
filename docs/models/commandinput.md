@@ -3,7 +3,7 @@
 ## Example Usage
 
 ```typescript
-import { CommandInput } from "prowlarr";
+import { CommandInput } from "prowlarr/models";
 
 let value: CommandInput = {};
 ```

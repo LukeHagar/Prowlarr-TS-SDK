@@ -15,6 +15,7 @@
 
 ### Example Usage
 
+<!-- UsageSnippet language="typescript" operationID="get_/api/v1/system/status" method="get" path="/api/v1/system/status" -->
 ```typescript
 import { Prowlarr } from "prowlarr";
 
@@ -27,7 +28,6 @@ const prowlarr = new Prowlarr({
 async function run() {
   const result = await prowlarr.system.getApiV1SystemStatus();
 
-  // Handle the result
   console.log(result);
 }
 
@@ -52,15 +52,12 @@ const prowlarr = new ProwlarrCore({
 
 async function run() {
   const res = await systemGetApiV1SystemStatus(prowlarr);
-
-  if (!res.ok) {
-    throw res.error;
+  if (res.ok) {
+    const { value: result } = res;
+    console.log(result);
+  } else {
+    console.log("systemGetApiV1SystemStatus failed:", res.error);
   }
-
-  const { value: result } = res;
-
-  // Handle the result
-  console.log(result);
 }
 
 run();
@@ -88,6 +85,7 @@ run();
 
 ### Example Usage
 
+<!-- UsageSnippet language="typescript" operationID="get_/api/v1/system/routes" method="get" path="/api/v1/system/routes" -->
 ```typescript
 import { Prowlarr } from "prowlarr";
 
@@ -124,14 +122,12 @@ const prowlarr = new ProwlarrCore({
 
 async function run() {
   const res = await systemGetApiV1SystemRoutes(prowlarr);
-
-  if (!res.ok) {
-    throw res.error;
+  if (res.ok) {
+    const { value: result } = res;
+    
+  } else {
+    console.log("systemGetApiV1SystemRoutes failed:", res.error);
   }
-
-  const { value: result } = res;
-
-  
 }
 
 run();
@@ -159,6 +155,7 @@ run();
 
 ### Example Usage
 
+<!-- UsageSnippet language="typescript" operationID="get_/api/v1/system/routes/duplicate" method="get" path="/api/v1/system/routes/duplicate" -->
 ```typescript
 import { Prowlarr } from "prowlarr";
 
@@ -195,14 +192,12 @@ const prowlarr = new ProwlarrCore({
 
 async function run() {
   const res = await systemGetApiV1SystemRoutesDuplicate(prowlarr);
-
-  if (!res.ok) {
-    throw res.error;
+  if (res.ok) {
+    const { value: result } = res;
+    
+  } else {
+    console.log("systemGetApiV1SystemRoutesDuplicate failed:", res.error);
   }
-
-  const { value: result } = res;
-
-  
 }
 
 run();
@@ -230,6 +225,7 @@ run();
 
 ### Example Usage
 
+<!-- UsageSnippet language="typescript" operationID="post_/api/v1/system/shutdown" method="post" path="/api/v1/system/shutdown" -->
 ```typescript
 import { Prowlarr } from "prowlarr";
 
@@ -266,14 +262,12 @@ const prowlarr = new ProwlarrCore({
 
 async function run() {
   const res = await systemPostApiV1SystemShutdown(prowlarr);
-
-  if (!res.ok) {
-    throw res.error;
+  if (res.ok) {
+    const { value: result } = res;
+    
+  } else {
+    console.log("systemPostApiV1SystemShutdown failed:", res.error);
   }
-
-  const { value: result } = res;
-
-  
 }
 
 run();
@@ -301,6 +295,7 @@ run();
 
 ### Example Usage
 
+<!-- UsageSnippet language="typescript" operationID="post_/api/v1/system/restart" method="post" path="/api/v1/system/restart" -->
 ```typescript
 import { Prowlarr } from "prowlarr";
 
@@ -337,14 +332,12 @@ const prowlarr = new ProwlarrCore({
 
 async function run() {
   const res = await systemPostApiV1SystemRestart(prowlarr);
-
-  if (!res.ok) {
-    throw res.error;
+  if (res.ok) {
+    const { value: result } = res;
+    
+  } else {
+    console.log("systemPostApiV1SystemRestart failed:", res.error);
   }
-
-  const { value: result } = res;
-
-  
 }
 
 run();

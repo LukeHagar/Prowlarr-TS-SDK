@@ -13,6 +13,7 @@
 
 ### Example Usage
 
+<!-- UsageSnippet language="typescript" operationID="get_/api/v1/history" method="get" path="/api/v1/history" -->
 ```typescript
 import { Prowlarr } from "prowlarr";
 
@@ -25,7 +26,6 @@ const prowlarr = new Prowlarr({
 async function run() {
   const result = await prowlarr.history.getApiV1History({});
 
-  // Handle the result
   console.log(result);
 }
 
@@ -50,15 +50,12 @@ const prowlarr = new ProwlarrCore({
 
 async function run() {
   const res = await historyGetApiV1History(prowlarr, {});
-
-  if (!res.ok) {
-    throw res.error;
+  if (res.ok) {
+    const { value: result } = res;
+    console.log(result);
+  } else {
+    console.log("historyGetApiV1History failed:", res.error);
   }
-
-  const { value: result } = res;
-
-  // Handle the result
-  console.log(result);
 }
 
 run();
@@ -87,6 +84,7 @@ run();
 
 ### Example Usage
 
+<!-- UsageSnippet language="typescript" operationID="get_/api/v1/history/since" method="get" path="/api/v1/history/since" -->
 ```typescript
 import { Prowlarr } from "prowlarr";
 
@@ -99,7 +97,6 @@ const prowlarr = new Prowlarr({
 async function run() {
   const result = await prowlarr.history.getApiV1HistorySince({});
 
-  // Handle the result
   console.log(result);
 }
 
@@ -124,15 +121,12 @@ const prowlarr = new ProwlarrCore({
 
 async function run() {
   const res = await historyGetApiV1HistorySince(prowlarr, {});
-
-  if (!res.ok) {
-    throw res.error;
+  if (res.ok) {
+    const { value: result } = res;
+    console.log(result);
+  } else {
+    console.log("historyGetApiV1HistorySince failed:", res.error);
   }
-
-  const { value: result } = res;
-
-  // Handle the result
-  console.log(result);
 }
 
 run();
@@ -161,6 +155,7 @@ run();
 
 ### Example Usage
 
+<!-- UsageSnippet language="typescript" operationID="get_/api/v1/history/indexer" method="get" path="/api/v1/history/indexer" -->
 ```typescript
 import { Prowlarr } from "prowlarr";
 
@@ -173,7 +168,6 @@ const prowlarr = new Prowlarr({
 async function run() {
   const result = await prowlarr.history.getApiV1HistoryIndexer({});
 
-  // Handle the result
   console.log(result);
 }
 
@@ -198,15 +192,12 @@ const prowlarr = new ProwlarrCore({
 
 async function run() {
   const res = await historyGetApiV1HistoryIndexer(prowlarr, {});
-
-  if (!res.ok) {
-    throw res.error;
+  if (res.ok) {
+    const { value: result } = res;
+    console.log(result);
+  } else {
+    console.log("historyGetApiV1HistoryIndexer failed:", res.error);
   }
-
-  const { value: result } = res;
-
-  // Handle the result
-  console.log(result);
 }
 
 run();

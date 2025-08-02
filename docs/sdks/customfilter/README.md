@@ -15,6 +15,7 @@
 
 ### Example Usage
 
+<!-- UsageSnippet language="typescript" operationID="get_/api/v1/customfilter/{id}" method="get" path="/api/v1/customfilter/{id}" -->
 ```typescript
 import { Prowlarr } from "prowlarr";
 
@@ -29,7 +30,6 @@ async function run() {
     id: 367030,
   });
 
-  // Handle the result
   console.log(result);
 }
 
@@ -56,15 +56,12 @@ async function run() {
   const res = await customFilterGetApiV1CustomfilterId(prowlarr, {
     id: 367030,
   });
-
-  if (!res.ok) {
-    throw res.error;
+  if (res.ok) {
+    const { value: result } = res;
+    console.log(result);
+  } else {
+    console.log("customFilterGetApiV1CustomfilterId failed:", res.error);
   }
-
-  const { value: result } = res;
-
-  // Handle the result
-  console.log(result);
 }
 
 run();
@@ -93,6 +90,7 @@ run();
 
 ### Example Usage
 
+<!-- UsageSnippet language="typescript" operationID="put_/api/v1/customfilter/{id}" method="put" path="/api/v1/customfilter/{id}" -->
 ```typescript
 import { Prowlarr } from "prowlarr";
 
@@ -107,7 +105,6 @@ async function run() {
     id: "<id>",
   });
 
-  // Handle the result
   console.log(result);
 }
 
@@ -134,15 +131,12 @@ async function run() {
   const res = await customFilterPutApiV1CustomfilterId(prowlarr, {
     id: "<id>",
   });
-
-  if (!res.ok) {
-    throw res.error;
+  if (res.ok) {
+    const { value: result } = res;
+    console.log(result);
+  } else {
+    console.log("customFilterPutApiV1CustomfilterId failed:", res.error);
   }
-
-  const { value: result } = res;
-
-  // Handle the result
-  console.log(result);
 }
 
 run();
@@ -171,6 +165,7 @@ run();
 
 ### Example Usage
 
+<!-- UsageSnippet language="typescript" operationID="delete_/api/v1/customfilter/{id}" method="delete" path="/api/v1/customfilter/{id}" -->
 ```typescript
 import { Prowlarr } from "prowlarr";
 
@@ -211,14 +206,12 @@ async function run() {
   const res = await customFilterDeleteApiV1CustomfilterId(prowlarr, {
     id: 400472,
   });
-
-  if (!res.ok) {
-    throw res.error;
+  if (res.ok) {
+    const { value: result } = res;
+    
+  } else {
+    console.log("customFilterDeleteApiV1CustomfilterId failed:", res.error);
   }
-
-  const { value: result } = res;
-
-  
 }
 
 run();
@@ -247,6 +240,7 @@ run();
 
 ### Example Usage
 
+<!-- UsageSnippet language="typescript" operationID="get_/api/v1/customfilter" method="get" path="/api/v1/customfilter" -->
 ```typescript
 import { Prowlarr } from "prowlarr";
 
@@ -259,7 +253,6 @@ const prowlarr = new Prowlarr({
 async function run() {
   const result = await prowlarr.customFilter.getApiV1Customfilter();
 
-  // Handle the result
   console.log(result);
 }
 
@@ -284,15 +277,12 @@ const prowlarr = new ProwlarrCore({
 
 async function run() {
   const res = await customFilterGetApiV1Customfilter(prowlarr);
-
-  if (!res.ok) {
-    throw res.error;
+  if (res.ok) {
+    const { value: result } = res;
+    console.log(result);
+  } else {
+    console.log("customFilterGetApiV1Customfilter failed:", res.error);
   }
-
-  const { value: result } = res;
-
-  // Handle the result
-  console.log(result);
 }
 
 run();
@@ -320,6 +310,7 @@ run();
 
 ### Example Usage
 
+<!-- UsageSnippet language="typescript" operationID="post_/api/v1/customfilter" method="post" path="/api/v1/customfilter" -->
 ```typescript
 import { Prowlarr } from "prowlarr";
 
@@ -332,7 +323,6 @@ const prowlarr = new Prowlarr({
 async function run() {
   const result = await prowlarr.customFilter.postApiV1Customfilter();
 
-  // Handle the result
   console.log(result);
 }
 
@@ -357,15 +347,12 @@ const prowlarr = new ProwlarrCore({
 
 async function run() {
   const res = await customFilterPostApiV1Customfilter(prowlarr);
-
-  if (!res.ok) {
-    throw res.error;
+  if (res.ok) {
+    const { value: result } = res;
+    console.log(result);
+  } else {
+    console.log("customFilterPostApiV1Customfilter failed:", res.error);
   }
-
-  const { value: result } = res;
-
-  // Handle the result
-  console.log(result);
 }
 
 run();

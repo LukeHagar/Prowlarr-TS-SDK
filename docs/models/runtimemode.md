@@ -3,7 +3,7 @@
 ## Example Usage
 
 ```typescript
-import { RuntimeMode } from "prowlarr";
+import { RuntimeMode } from "prowlarr/models";
 
 let value: RuntimeMode = "console";
 ```

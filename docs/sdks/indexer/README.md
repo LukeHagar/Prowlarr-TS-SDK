@@ -21,6 +21,7 @@
 
 ### Example Usage
 
+<!-- UsageSnippet language="typescript" operationID="get_/api/v1/indexer/{id}" method="get" path="/api/v1/indexer/{id}" -->
 ```typescript
 import { Prowlarr } from "prowlarr";
 
@@ -35,7 +36,6 @@ async function run() {
     id: 596285,
   });
 
-  // Handle the result
   console.log(result);
 }
 
@@ -62,15 +62,12 @@ async function run() {
   const res = await indexerGetApiV1IndexerId(prowlarr, {
     id: 596285,
   });
-
-  if (!res.ok) {
-    throw res.error;
+  if (res.ok) {
+    const { value: result } = res;
+    console.log(result);
+  } else {
+    console.log("indexerGetApiV1IndexerId failed:", res.error);
   }
-
-  const { value: result } = res;
-
-  // Handle the result
-  console.log(result);
 }
 
 run();
@@ -99,6 +96,7 @@ run();
 
 ### Example Usage
 
+<!-- UsageSnippet language="typescript" operationID="put_/api/v1/indexer/{id}" method="put" path="/api/v1/indexer/{id}" -->
 ```typescript
 import { Prowlarr } from "prowlarr";
 
@@ -113,7 +111,6 @@ async function run() {
     id: "<id>",
   });
 
-  // Handle the result
   console.log(result);
 }
 
@@ -140,15 +137,12 @@ async function run() {
   const res = await indexerPutApiV1IndexerId(prowlarr, {
     id: "<id>",
   });
-
-  if (!res.ok) {
-    throw res.error;
+  if (res.ok) {
+    const { value: result } = res;
+    console.log(result);
+  } else {
+    console.log("indexerPutApiV1IndexerId failed:", res.error);
   }
-
-  const { value: result } = res;
-
-  // Handle the result
-  console.log(result);
 }
 
 run();
@@ -177,6 +171,7 @@ run();
 
 ### Example Usage
 
+<!-- UsageSnippet language="typescript" operationID="delete_/api/v1/indexer/{id}" method="delete" path="/api/v1/indexer/{id}" -->
 ```typescript
 import { Prowlarr } from "prowlarr";
 
@@ -217,14 +212,12 @@ async function run() {
   const res = await indexerDeleteApiV1IndexerId(prowlarr, {
     id: 158662,
   });
-
-  if (!res.ok) {
-    throw res.error;
+  if (res.ok) {
+    const { value: result } = res;
+    
+  } else {
+    console.log("indexerDeleteApiV1IndexerId failed:", res.error);
   }
-
-  const { value: result } = res;
-
-  
 }
 
 run();
@@ -253,6 +246,7 @@ run();
 
 ### Example Usage
 
+<!-- UsageSnippet language="typescript" operationID="get_/api/v1/indexer" method="get" path="/api/v1/indexer" -->
 ```typescript
 import { Prowlarr } from "prowlarr";
 
@@ -265,7 +259,6 @@ const prowlarr = new Prowlarr({
 async function run() {
   const result = await prowlarr.indexer.getApiV1Indexer();
 
-  // Handle the result
   console.log(result);
 }
 
@@ -290,15 +283,12 @@ const prowlarr = new ProwlarrCore({
 
 async function run() {
   const res = await indexerGetApiV1Indexer(prowlarr);
-
-  if (!res.ok) {
-    throw res.error;
+  if (res.ok) {
+    const { value: result } = res;
+    console.log(result);
+  } else {
+    console.log("indexerGetApiV1Indexer failed:", res.error);
   }
-
-  const { value: result } = res;
-
-  // Handle the result
-  console.log(result);
 }
 
 run();
@@ -326,6 +316,7 @@ run();
 
 ### Example Usage
 
+<!-- UsageSnippet language="typescript" operationID="post_/api/v1/indexer" method="post" path="/api/v1/indexer" -->
 ```typescript
 import { Prowlarr } from "prowlarr";
 
@@ -338,7 +329,6 @@ const prowlarr = new Prowlarr({
 async function run() {
   const result = await prowlarr.indexer.postApiV1Indexer({});
 
-  // Handle the result
   console.log(result);
 }
 
@@ -363,15 +353,12 @@ const prowlarr = new ProwlarrCore({
 
 async function run() {
   const res = await indexerPostApiV1Indexer(prowlarr, {});
-
-  if (!res.ok) {
-    throw res.error;
+  if (res.ok) {
+    const { value: result } = res;
+    console.log(result);
+  } else {
+    console.log("indexerPostApiV1Indexer failed:", res.error);
   }
-
-  const { value: result } = res;
-
-  // Handle the result
-  console.log(result);
 }
 
 run();
@@ -400,6 +387,7 @@ run();
 
 ### Example Usage
 
+<!-- UsageSnippet language="typescript" operationID="put_/api/v1/indexer/bulk" method="put" path="/api/v1/indexer/bulk" -->
 ```typescript
 import { Prowlarr } from "prowlarr";
 
@@ -412,7 +400,6 @@ const prowlarr = new Prowlarr({
 async function run() {
   const result = await prowlarr.indexer.putApiV1IndexerBulk();
 
-  // Handle the result
   console.log(result);
 }
 
@@ -437,15 +424,12 @@ const prowlarr = new ProwlarrCore({
 
 async function run() {
   const res = await indexerPutApiV1IndexerBulk(prowlarr);
-
-  if (!res.ok) {
-    throw res.error;
+  if (res.ok) {
+    const { value: result } = res;
+    console.log(result);
+  } else {
+    console.log("indexerPutApiV1IndexerBulk failed:", res.error);
   }
-
-  const { value: result } = res;
-
-  // Handle the result
-  console.log(result);
 }
 
 run();
@@ -474,6 +458,7 @@ run();
 
 ### Example Usage
 
+<!-- UsageSnippet language="typescript" operationID="delete_/api/v1/indexer/bulk" method="delete" path="/api/v1/indexer/bulk" -->
 ```typescript
 import { Prowlarr } from "prowlarr";
 
@@ -510,14 +495,12 @@ const prowlarr = new ProwlarrCore({
 
 async function run() {
   const res = await indexerDeleteApiV1IndexerBulk(prowlarr);
-
-  if (!res.ok) {
-    throw res.error;
+  if (res.ok) {
+    const { value: result } = res;
+    
+  } else {
+    console.log("indexerDeleteApiV1IndexerBulk failed:", res.error);
   }
-
-  const { value: result } = res;
-
-  
 }
 
 run();
@@ -546,6 +529,7 @@ run();
 
 ### Example Usage
 
+<!-- UsageSnippet language="typescript" operationID="get_/api/v1/indexer/schema" method="get" path="/api/v1/indexer/schema" -->
 ```typescript
 import { Prowlarr } from "prowlarr";
 
@@ -558,7 +542,6 @@ const prowlarr = new Prowlarr({
 async function run() {
   const result = await prowlarr.indexer.getApiV1IndexerSchema();
 
-  // Handle the result
   console.log(result);
 }
 
@@ -583,15 +566,12 @@ const prowlarr = new ProwlarrCore({
 
 async function run() {
   const res = await indexerGetApiV1IndexerSchema(prowlarr);
-
-  if (!res.ok) {
-    throw res.error;
+  if (res.ok) {
+    const { value: result } = res;
+    console.log(result);
+  } else {
+    console.log("indexerGetApiV1IndexerSchema failed:", res.error);
   }
-
-  const { value: result } = res;
-
-  // Handle the result
-  console.log(result);
 }
 
 run();
@@ -619,6 +599,7 @@ run();
 
 ### Example Usage
 
+<!-- UsageSnippet language="typescript" operationID="post_/api/v1/indexer/test" method="post" path="/api/v1/indexer/test" -->
 ```typescript
 import { Prowlarr } from "prowlarr";
 
@@ -655,14 +636,12 @@ const prowlarr = new ProwlarrCore({
 
 async function run() {
   const res = await indexerPostApiV1IndexerTest(prowlarr, {});
-
-  if (!res.ok) {
-    throw res.error;
+  if (res.ok) {
+    const { value: result } = res;
+    
+  } else {
+    console.log("indexerPostApiV1IndexerTest failed:", res.error);
   }
-
-  const { value: result } = res;
-
-  
 }
 
 run();
@@ -691,6 +670,7 @@ run();
 
 ### Example Usage
 
+<!-- UsageSnippet language="typescript" operationID="post_/api/v1/indexer/testall" method="post" path="/api/v1/indexer/testall" -->
 ```typescript
 import { Prowlarr } from "prowlarr";
 
@@ -727,14 +707,12 @@ const prowlarr = new ProwlarrCore({
 
 async function run() {
   const res = await indexerPostApiV1IndexerTestall(prowlarr);
-
-  if (!res.ok) {
-    throw res.error;
+  if (res.ok) {
+    const { value: result } = res;
+    
+  } else {
+    console.log("indexerPostApiV1IndexerTestall failed:", res.error);
   }
-
-  const { value: result } = res;
-
-  
 }
 
 run();
@@ -762,6 +740,7 @@ run();
 
 ### Example Usage
 
+<!-- UsageSnippet language="typescript" operationID="post_/api/v1/indexer/action/{name}" method="post" path="/api/v1/indexer/action/{name}" -->
 ```typescript
 import { Prowlarr } from "prowlarr";
 
@@ -802,14 +781,12 @@ async function run() {
   const res = await indexerPostApiV1IndexerActionName(prowlarr, {
     name: "<value>",
   });
-
-  if (!res.ok) {
-    throw res.error;
+  if (res.ok) {
+    const { value: result } = res;
+    
+  } else {
+    console.log("indexerPostApiV1IndexerActionName failed:", res.error);
   }
-
-  const { value: result } = res;
-
-  
 }
 
 run();

@@ -21,6 +21,7 @@
 
 ### Example Usage
 
+<!-- UsageSnippet language="typescript" operationID="get_/api/v1/applications/{id}" method="get" path="/api/v1/applications/{id}" -->
 ```typescript
 import { Prowlarr } from "prowlarr";
 
@@ -35,7 +36,6 @@ async function run() {
     id: 282902,
   });
 
-  // Handle the result
   console.log(result);
 }
 
@@ -62,15 +62,12 @@ async function run() {
   const res = await applicationGetApiV1ApplicationsId(prowlarr, {
     id: 282902,
   });
-
-  if (!res.ok) {
-    throw res.error;
+  if (res.ok) {
+    const { value: result } = res;
+    console.log(result);
+  } else {
+    console.log("applicationGetApiV1ApplicationsId failed:", res.error);
   }
-
-  const { value: result } = res;
-
-  // Handle the result
-  console.log(result);
 }
 
 run();
@@ -99,6 +96,7 @@ run();
 
 ### Example Usage
 
+<!-- UsageSnippet language="typescript" operationID="put_/api/v1/applications/{id}" method="put" path="/api/v1/applications/{id}" -->
 ```typescript
 import { Prowlarr } from "prowlarr";
 
@@ -113,7 +111,6 @@ async function run() {
     id: "<id>",
   });
 
-  // Handle the result
   console.log(result);
 }
 
@@ -140,15 +137,12 @@ async function run() {
   const res = await applicationPutApiV1ApplicationsId(prowlarr, {
     id: "<id>",
   });
-
-  if (!res.ok) {
-    throw res.error;
+  if (res.ok) {
+    const { value: result } = res;
+    console.log(result);
+  } else {
+    console.log("applicationPutApiV1ApplicationsId failed:", res.error);
   }
-
-  const { value: result } = res;
-
-  // Handle the result
-  console.log(result);
 }
 
 run();
@@ -177,6 +171,7 @@ run();
 
 ### Example Usage
 
+<!-- UsageSnippet language="typescript" operationID="delete_/api/v1/applications/{id}" method="delete" path="/api/v1/applications/{id}" -->
 ```typescript
 import { Prowlarr } from "prowlarr";
 
@@ -217,14 +212,12 @@ async function run() {
   const res = await applicationDeleteApiV1ApplicationsId(prowlarr, {
     id: 915442,
   });
-
-  if (!res.ok) {
-    throw res.error;
+  if (res.ok) {
+    const { value: result } = res;
+    
+  } else {
+    console.log("applicationDeleteApiV1ApplicationsId failed:", res.error);
   }
-
-  const { value: result } = res;
-
-  
 }
 
 run();
@@ -253,6 +246,7 @@ run();
 
 ### Example Usage
 
+<!-- UsageSnippet language="typescript" operationID="get_/api/v1/applications" method="get" path="/api/v1/applications" -->
 ```typescript
 import { Prowlarr } from "prowlarr";
 
@@ -265,7 +259,6 @@ const prowlarr = new Prowlarr({
 async function run() {
   const result = await prowlarr.application.getApiV1Applications();
 
-  // Handle the result
   console.log(result);
 }
 
@@ -290,15 +283,12 @@ const prowlarr = new ProwlarrCore({
 
 async function run() {
   const res = await applicationGetApiV1Applications(prowlarr);
-
-  if (!res.ok) {
-    throw res.error;
+  if (res.ok) {
+    const { value: result } = res;
+    console.log(result);
+  } else {
+    console.log("applicationGetApiV1Applications failed:", res.error);
   }
-
-  const { value: result } = res;
-
-  // Handle the result
-  console.log(result);
 }
 
 run();
@@ -326,6 +316,7 @@ run();
 
 ### Example Usage
 
+<!-- UsageSnippet language="typescript" operationID="post_/api/v1/applications" method="post" path="/api/v1/applications" -->
 ```typescript
 import { Prowlarr } from "prowlarr";
 
@@ -338,7 +329,6 @@ const prowlarr = new Prowlarr({
 async function run() {
   const result = await prowlarr.application.postApiV1Applications({});
 
-  // Handle the result
   console.log(result);
 }
 
@@ -363,15 +353,12 @@ const prowlarr = new ProwlarrCore({
 
 async function run() {
   const res = await applicationPostApiV1Applications(prowlarr, {});
-
-  if (!res.ok) {
-    throw res.error;
+  if (res.ok) {
+    const { value: result } = res;
+    console.log(result);
+  } else {
+    console.log("applicationPostApiV1Applications failed:", res.error);
   }
-
-  const { value: result } = res;
-
-  // Handle the result
-  console.log(result);
 }
 
 run();
@@ -400,6 +387,7 @@ run();
 
 ### Example Usage
 
+<!-- UsageSnippet language="typescript" operationID="put_/api/v1/applications/bulk" method="put" path="/api/v1/applications/bulk" -->
 ```typescript
 import { Prowlarr } from "prowlarr";
 
@@ -412,7 +400,6 @@ const prowlarr = new Prowlarr({
 async function run() {
   const result = await prowlarr.application.putApiV1ApplicationsBulk();
 
-  // Handle the result
   console.log(result);
 }
 
@@ -437,15 +424,12 @@ const prowlarr = new ProwlarrCore({
 
 async function run() {
   const res = await applicationPutApiV1ApplicationsBulk(prowlarr);
-
-  if (!res.ok) {
-    throw res.error;
+  if (res.ok) {
+    const { value: result } = res;
+    console.log(result);
+  } else {
+    console.log("applicationPutApiV1ApplicationsBulk failed:", res.error);
   }
-
-  const { value: result } = res;
-
-  // Handle the result
-  console.log(result);
 }
 
 run();
@@ -474,6 +458,7 @@ run();
 
 ### Example Usage
 
+<!-- UsageSnippet language="typescript" operationID="delete_/api/v1/applications/bulk" method="delete" path="/api/v1/applications/bulk" -->
 ```typescript
 import { Prowlarr } from "prowlarr";
 
@@ -510,14 +495,12 @@ const prowlarr = new ProwlarrCore({
 
 async function run() {
   const res = await applicationDeleteApiV1ApplicationsBulk(prowlarr);
-
-  if (!res.ok) {
-    throw res.error;
+  if (res.ok) {
+    const { value: result } = res;
+    
+  } else {
+    console.log("applicationDeleteApiV1ApplicationsBulk failed:", res.error);
   }
-
-  const { value: result } = res;
-
-  
 }
 
 run();
@@ -546,6 +529,7 @@ run();
 
 ### Example Usage
 
+<!-- UsageSnippet language="typescript" operationID="get_/api/v1/applications/schema" method="get" path="/api/v1/applications/schema" -->
 ```typescript
 import { Prowlarr } from "prowlarr";
 
@@ -558,7 +542,6 @@ const prowlarr = new Prowlarr({
 async function run() {
   const result = await prowlarr.application.getApiV1ApplicationsSchema();
 
-  // Handle the result
   console.log(result);
 }
 
@@ -583,15 +566,12 @@ const prowlarr = new ProwlarrCore({
 
 async function run() {
   const res = await applicationGetApiV1ApplicationsSchema(prowlarr);
-
-  if (!res.ok) {
-    throw res.error;
+  if (res.ok) {
+    const { value: result } = res;
+    console.log(result);
+  } else {
+    console.log("applicationGetApiV1ApplicationsSchema failed:", res.error);
   }
-
-  const { value: result } = res;
-
-  // Handle the result
-  console.log(result);
 }
 
 run();
@@ -619,6 +599,7 @@ run();
 
 ### Example Usage
 
+<!-- UsageSnippet language="typescript" operationID="post_/api/v1/applications/test" method="post" path="/api/v1/applications/test" -->
 ```typescript
 import { Prowlarr } from "prowlarr";
 
@@ -655,14 +636,12 @@ const prowlarr = new ProwlarrCore({
 
 async function run() {
   const res = await applicationPostApiV1ApplicationsTest(prowlarr, {});
-
-  if (!res.ok) {
-    throw res.error;
+  if (res.ok) {
+    const { value: result } = res;
+    
+  } else {
+    console.log("applicationPostApiV1ApplicationsTest failed:", res.error);
   }
-
-  const { value: result } = res;
-
-  
 }
 
 run();
@@ -691,6 +670,7 @@ run();
 
 ### Example Usage
 
+<!-- UsageSnippet language="typescript" operationID="post_/api/v1/applications/testall" method="post" path="/api/v1/applications/testall" -->
 ```typescript
 import { Prowlarr } from "prowlarr";
 
@@ -727,14 +707,12 @@ const prowlarr = new ProwlarrCore({
 
 async function run() {
   const res = await applicationPostApiV1ApplicationsTestall(prowlarr);
-
-  if (!res.ok) {
-    throw res.error;
+  if (res.ok) {
+    const { value: result } = res;
+    
+  } else {
+    console.log("applicationPostApiV1ApplicationsTestall failed:", res.error);
   }
-
-  const { value: result } = res;
-
-  
 }
 
 run();
@@ -762,6 +740,7 @@ run();
 
 ### Example Usage
 
+<!-- UsageSnippet language="typescript" operationID="post_/api/v1/applications/action/{name}" method="post" path="/api/v1/applications/action/{name}" -->
 ```typescript
 import { Prowlarr } from "prowlarr";
 
@@ -802,14 +781,12 @@ async function run() {
   const res = await applicationPostApiV1ApplicationsActionName(prowlarr, {
     name: "<value>",
   });
-
-  if (!res.ok) {
-    throw res.error;
+  if (res.ok) {
+    const { value: result } = res;
+    
+  } else {
+    console.log("applicationPostApiV1ApplicationsActionName failed:", res.error);
   }
-
-  const { value: result } = res;
-
-  
 }
 
 run();

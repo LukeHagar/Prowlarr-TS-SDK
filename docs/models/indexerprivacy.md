@@ -3,7 +3,7 @@
 ## Example Usage
 
 ```typescript
-import { IndexerPrivacy } from "prowlarr";
+import { IndexerPrivacy } from "prowlarr/models";
 
 let value: IndexerPrivacy = "public";
 ```

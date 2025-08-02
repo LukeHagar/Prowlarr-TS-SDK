@@ -12,6 +12,7 @@
 
 ### Example Usage
 
+<!-- UsageSnippet language="typescript" operationID="get_/api/v1/localization" method="get" path="/api/v1/localization" -->
 ```typescript
 import { Prowlarr } from "prowlarr";
 
@@ -48,14 +49,12 @@ const prowlarr = new ProwlarrCore({
 
 async function run() {
   const res = await localizationGetApiV1Localization(prowlarr);
-
-  if (!res.ok) {
-    throw res.error;
+  if (res.ok) {
+    const { value: result } = res;
+    
+  } else {
+    console.log("localizationGetApiV1Localization failed:", res.error);
   }
-
-  const { value: result } = res;
-
-  
 }
 
 run();
@@ -83,6 +82,7 @@ run();
 
 ### Example Usage
 
+<!-- UsageSnippet language="typescript" operationID="get_/api/v1/localization/options" method="get" path="/api/v1/localization/options" -->
 ```typescript
 import { Prowlarr } from "prowlarr";
 
@@ -95,7 +95,6 @@ const prowlarr = new Prowlarr({
 async function run() {
   const result = await prowlarr.localization.getApiV1LocalizationOptions();
 
-  // Handle the result
   console.log(result);
 }
 
@@ -120,15 +119,12 @@ const prowlarr = new ProwlarrCore({
 
 async function run() {
   const res = await localizationGetApiV1LocalizationOptions(prowlarr);
-
-  if (!res.ok) {
-    throw res.error;
+  if (res.ok) {
+    const { value: result } = res;
+    console.log(result);
+  } else {
+    console.log("localizationGetApiV1LocalizationOptions failed:", res.error);
   }
-
-  const { value: result } = res;
-
-  // Handle the result
-  console.log(result);
 }
 
 run();

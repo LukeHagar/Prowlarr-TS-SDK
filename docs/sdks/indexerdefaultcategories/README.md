@@ -11,6 +11,7 @@
 
 ### Example Usage
 
+<!-- UsageSnippet language="typescript" operationID="get_/api/v1/indexer/categories" method="get" path="/api/v1/indexer/categories" -->
 ```typescript
 import { Prowlarr } from "prowlarr";
 
@@ -23,7 +24,6 @@ const prowlarr = new Prowlarr({
 async function run() {
   const result = await prowlarr.indexerDefaultCategories.getApiV1IndexerCategories();
 
-  // Handle the result
   console.log(result);
 }
 
@@ -48,15 +48,12 @@ const prowlarr = new ProwlarrCore({
 
 async function run() {
   const res = await indexerDefaultCategoriesGetApiV1IndexerCategories(prowlarr);
-
-  if (!res.ok) {
-    throw res.error;
+  if (res.ok) {
+    const { value: result } = res;
+    console.log(result);
+  } else {
+    console.log("indexerDefaultCategoriesGetApiV1IndexerCategories failed:", res.error);
   }
-
-  const { value: result } = res;
-
-  // Handle the result
-  console.log(result);
 }
 
 run();

@@ -13,6 +13,7 @@
 
 ### Example Usage
 
+<!-- UsageSnippet language="typescript" operationID="post_/api/v1/search" method="post" path="/api/v1/search" -->
 ```typescript
 import { Prowlarr } from "prowlarr";
 
@@ -25,7 +26,6 @@ const prowlarr = new Prowlarr({
 async function run() {
   const result = await prowlarr.search.postApiV1Search();
 
-  // Handle the result
   console.log(result);
 }
 
@@ -50,15 +50,12 @@ const prowlarr = new ProwlarrCore({
 
 async function run() {
   const res = await searchPostApiV1Search(prowlarr);
-
-  if (!res.ok) {
-    throw res.error;
+  if (res.ok) {
+    const { value: result } = res;
+    console.log(result);
+  } else {
+    console.log("searchPostApiV1Search failed:", res.error);
   }
-
-  const { value: result } = res;
-
-  // Handle the result
-  console.log(result);
 }
 
 run();
@@ -87,6 +84,7 @@ run();
 
 ### Example Usage
 
+<!-- UsageSnippet language="typescript" operationID="get_/api/v1/search" method="get" path="/api/v1/search" -->
 ```typescript
 import { Prowlarr } from "prowlarr";
 
@@ -99,7 +97,6 @@ const prowlarr = new Prowlarr({
 async function run() {
   const result = await prowlarr.search.getApiV1Search({});
 
-  // Handle the result
   console.log(result);
 }
 
@@ -124,15 +121,12 @@ const prowlarr = new ProwlarrCore({
 
 async function run() {
   const res = await searchGetApiV1Search(prowlarr, {});
-
-  if (!res.ok) {
-    throw res.error;
+  if (res.ok) {
+    const { value: result } = res;
+    console.log(result);
+  } else {
+    console.log("searchGetApiV1Search failed:", res.error);
   }
-
-  const { value: result } = res;
-
-  // Handle the result
-  console.log(result);
 }
 
 run();
@@ -161,6 +155,7 @@ run();
 
 ### Example Usage
 
+<!-- UsageSnippet language="typescript" operationID="post_/api/v1/search/bulk" method="post" path="/api/v1/search/bulk" -->
 ```typescript
 import { Prowlarr } from "prowlarr";
 
@@ -173,7 +168,6 @@ const prowlarr = new Prowlarr({
 async function run() {
   const result = await prowlarr.search.postApiV1SearchBulk();
 
-  // Handle the result
   console.log(result);
 }
 
@@ -198,15 +192,12 @@ const prowlarr = new ProwlarrCore({
 
 async function run() {
   const res = await searchPostApiV1SearchBulk(prowlarr);
-
-  if (!res.ok) {
-    throw res.error;
+  if (res.ok) {
+    const { value: result } = res;
+    console.log(result);
+  } else {
+    console.log("searchPostApiV1SearchBulk failed:", res.error);
   }
-
-  const { value: result } = res;
-
-  // Handle the result
-  console.log(result);
 }
 
 run();

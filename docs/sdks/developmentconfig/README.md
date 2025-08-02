@@ -13,6 +13,7 @@
 
 ### Example Usage
 
+<!-- UsageSnippet language="typescript" operationID="put_/api/v1/config/development/{id}" method="put" path="/api/v1/config/development/{id}" -->
 ```typescript
 import { Prowlarr } from "prowlarr";
 
@@ -27,7 +28,6 @@ async function run() {
     id: "<id>",
   });
 
-  // Handle the result
   console.log(result);
 }
 
@@ -54,15 +54,12 @@ async function run() {
   const res = await developmentConfigPutApiV1ConfigDevelopmentId(prowlarr, {
     id: "<id>",
   });
-
-  if (!res.ok) {
-    throw res.error;
+  if (res.ok) {
+    const { value: result } = res;
+    console.log(result);
+  } else {
+    console.log("developmentConfigPutApiV1ConfigDevelopmentId failed:", res.error);
   }
-
-  const { value: result } = res;
-
-  // Handle the result
-  console.log(result);
 }
 
 run();
@@ -91,6 +88,7 @@ run();
 
 ### Example Usage
 
+<!-- UsageSnippet language="typescript" operationID="get_/api/v1/config/development/{id}" method="get" path="/api/v1/config/development/{id}" -->
 ```typescript
 import { Prowlarr } from "prowlarr";
 
@@ -105,7 +103,6 @@ async function run() {
     id: 820899,
   });
 
-  // Handle the result
   console.log(result);
 }
 
@@ -132,15 +129,12 @@ async function run() {
   const res = await developmentConfigGetApiV1ConfigDevelopmentId(prowlarr, {
     id: 820899,
   });
-
-  if (!res.ok) {
-    throw res.error;
+  if (res.ok) {
+    const { value: result } = res;
+    console.log(result);
+  } else {
+    console.log("developmentConfigGetApiV1ConfigDevelopmentId failed:", res.error);
   }
-
-  const { value: result } = res;
-
-  // Handle the result
-  console.log(result);
 }
 
 run();
@@ -169,6 +163,7 @@ run();
 
 ### Example Usage
 
+<!-- UsageSnippet language="typescript" operationID="get_/api/v1/config/development" method="get" path="/api/v1/config/development" -->
 ```typescript
 import { Prowlarr } from "prowlarr";
 
@@ -181,7 +176,6 @@ const prowlarr = new Prowlarr({
 async function run() {
   const result = await prowlarr.developmentConfig.getApiV1ConfigDevelopment();
 
-  // Handle the result
   console.log(result);
 }
 
@@ -206,15 +200,12 @@ const prowlarr = new ProwlarrCore({
 
 async function run() {
   const res = await developmentConfigGetApiV1ConfigDevelopment(prowlarr);
-
-  if (!res.ok) {
-    throw res.error;
+  if (res.ok) {
+    const { value: result } = res;
+    console.log(result);
+  } else {
+    console.log("developmentConfigGetApiV1ConfigDevelopment failed:", res.error);
   }
-
-  const { value: result } = res;
-
-  // Handle the result
-  console.log(result);
 }
 
 run();

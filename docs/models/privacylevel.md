@@ -3,7 +3,7 @@
 ## Example Usage
 
 ```typescript
-import { PrivacyLevel } from "prowlarr";
+import { PrivacyLevel } from "prowlarr/models";
 
 let value: PrivacyLevel = "apiKey";
 ```

@@ -15,6 +15,7 @@
 
 ### Example Usage
 
+<!-- UsageSnippet language="typescript" operationID="get_/api/v1/tag/{id}" method="get" path="/api/v1/tag/{id}" -->
 ```typescript
 import { Prowlarr } from "prowlarr";
 
@@ -29,7 +30,6 @@ async function run() {
     id: 828174,
   });
 
-  // Handle the result
   console.log(result);
 }
 
@@ -56,15 +56,12 @@ async function run() {
   const res = await tagGetApiV1TagId(prowlarr, {
     id: 828174,
   });
-
-  if (!res.ok) {
-    throw res.error;
+  if (res.ok) {
+    const { value: result } = res;
+    console.log(result);
+  } else {
+    console.log("tagGetApiV1TagId failed:", res.error);
   }
-
-  const { value: result } = res;
-
-  // Handle the result
-  console.log(result);
 }
 
 run();
@@ -93,6 +90,7 @@ run();
 
 ### Example Usage
 
+<!-- UsageSnippet language="typescript" operationID="put_/api/v1/tag/{id}" method="put" path="/api/v1/tag/{id}" -->
 ```typescript
 import { Prowlarr } from "prowlarr";
 
@@ -107,7 +105,6 @@ async function run() {
     id: "<id>",
   });
 
-  // Handle the result
   console.log(result);
 }
 
@@ -134,15 +131,12 @@ async function run() {
   const res = await tagPutApiV1TagId(prowlarr, {
     id: "<id>",
   });
-
-  if (!res.ok) {
-    throw res.error;
+  if (res.ok) {
+    const { value: result } = res;
+    console.log(result);
+  } else {
+    console.log("tagPutApiV1TagId failed:", res.error);
   }
-
-  const { value: result } = res;
-
-  // Handle the result
-  console.log(result);
 }
 
 run();
@@ -171,6 +165,7 @@ run();
 
 ### Example Usage
 
+<!-- UsageSnippet language="typescript" operationID="delete_/api/v1/tag/{id}" method="delete" path="/api/v1/tag/{id}" -->
 ```typescript
 import { Prowlarr } from "prowlarr";
 
@@ -211,14 +206,12 @@ async function run() {
   const res = await tagDeleteApiV1TagId(prowlarr, {
     id: 465312,
   });
-
-  if (!res.ok) {
-    throw res.error;
+  if (res.ok) {
+    const { value: result } = res;
+    
+  } else {
+    console.log("tagDeleteApiV1TagId failed:", res.error);
   }
-
-  const { value: result } = res;
-
-  
 }
 
 run();
@@ -247,6 +240,7 @@ run();
 
 ### Example Usage
 
+<!-- UsageSnippet language="typescript" operationID="get_/api/v1/tag" method="get" path="/api/v1/tag" -->
 ```typescript
 import { Prowlarr } from "prowlarr";
 
@@ -259,7 +253,6 @@ const prowlarr = new Prowlarr({
 async function run() {
   const result = await prowlarr.tag.getApiV1Tag();
 
-  // Handle the result
   console.log(result);
 }
 
@@ -284,15 +277,12 @@ const prowlarr = new ProwlarrCore({
 
 async function run() {
   const res = await tagGetApiV1Tag(prowlarr);
-
-  if (!res.ok) {
-    throw res.error;
+  if (res.ok) {
+    const { value: result } = res;
+    console.log(result);
+  } else {
+    console.log("tagGetApiV1Tag failed:", res.error);
   }
-
-  const { value: result } = res;
-
-  // Handle the result
-  console.log(result);
 }
 
 run();
@@ -320,6 +310,7 @@ run();
 
 ### Example Usage
 
+<!-- UsageSnippet language="typescript" operationID="post_/api/v1/tag" method="post" path="/api/v1/tag" -->
 ```typescript
 import { Prowlarr } from "prowlarr";
 
@@ -332,7 +323,6 @@ const prowlarr = new Prowlarr({
 async function run() {
   const result = await prowlarr.tag.postApiV1Tag();
 
-  // Handle the result
   console.log(result);
 }
 
@@ -357,15 +347,12 @@ const prowlarr = new ProwlarrCore({
 
 async function run() {
   const res = await tagPostApiV1Tag(prowlarr);
-
-  if (!res.ok) {
-    throw res.error;
+  if (res.ok) {
+    const { value: result } = res;
+    console.log(result);
+  } else {
+    console.log("tagPostApiV1Tag failed:", res.error);
   }
-
-  const { value: result } = res;
-
-  // Handle the result
-  console.log(result);
 }
 
 run();

@@ -12,6 +12,7 @@
 
 ### Example Usage
 
+<!-- UsageSnippet language="typescript" operationID="get_/api/v1/system/task" method="get" path="/api/v1/system/task" -->
 ```typescript
 import { Prowlarr } from "prowlarr";
 
@@ -24,7 +25,6 @@ const prowlarr = new Prowlarr({
 async function run() {
   const result = await prowlarr.task.getApiV1SystemTask();
 
-  // Handle the result
   console.log(result);
 }
 
@@ -49,15 +49,12 @@ const prowlarr = new ProwlarrCore({
 
 async function run() {
   const res = await taskGetApiV1SystemTask(prowlarr);
-
-  if (!res.ok) {
-    throw res.error;
+  if (res.ok) {
+    const { value: result } = res;
+    console.log(result);
+  } else {
+    console.log("taskGetApiV1SystemTask failed:", res.error);
   }
-
-  const { value: result } = res;
-
-  // Handle the result
-  console.log(result);
 }
 
 run();
@@ -85,6 +82,7 @@ run();
 
 ### Example Usage
 
+<!-- UsageSnippet language="typescript" operationID="get_/api/v1/system/task/{id}" method="get" path="/api/v1/system/task/{id}" -->
 ```typescript
 import { Prowlarr } from "prowlarr";
 
@@ -99,7 +97,6 @@ async function run() {
     id: 459582,
   });
 
-  // Handle the result
   console.log(result);
 }
 
@@ -126,15 +123,12 @@ async function run() {
   const res = await taskGetApiV1SystemTaskId(prowlarr, {
     id: 459582,
   });
-
-  if (!res.ok) {
-    throw res.error;
+  if (res.ok) {
+    const { value: result } = res;
+    console.log(result);
+  } else {
+    console.log("taskGetApiV1SystemTaskId failed:", res.error);
   }
-
-  const { value: result } = res;
-
-  // Handle the result
-  console.log(result);
 }
 
 run();

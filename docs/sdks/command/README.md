@@ -14,6 +14,7 @@
 
 ### Example Usage
 
+<!-- UsageSnippet language="typescript" operationID="get_/api/v1/command/{id}" method="get" path="/api/v1/command/{id}" -->
 ```typescript
 import { Prowlarr } from "prowlarr";
 
@@ -28,7 +29,6 @@ async function run() {
     id: 274829,
   });
 
-  // Handle the result
   console.log(result);
 }
 
@@ -55,15 +55,12 @@ async function run() {
   const res = await commandGetApiV1CommandId(prowlarr, {
     id: 274829,
   });
-
-  if (!res.ok) {
-    throw res.error;
+  if (res.ok) {
+    const { value: result } = res;
+    console.log(result);
+  } else {
+    console.log("commandGetApiV1CommandId failed:", res.error);
   }
-
-  const { value: result } = res;
-
-  // Handle the result
-  console.log(result);
 }
 
 run();
@@ -92,6 +89,7 @@ run();
 
 ### Example Usage
 
+<!-- UsageSnippet language="typescript" operationID="delete_/api/v1/command/{id}" method="delete" path="/api/v1/command/{id}" -->
 ```typescript
 import { Prowlarr } from "prowlarr";
 
@@ -132,14 +130,12 @@ async function run() {
   const res = await commandDeleteApiV1CommandId(prowlarr, {
     id: 932632,
   });
-
-  if (!res.ok) {
-    throw res.error;
+  if (res.ok) {
+    const { value: result } = res;
+    
+  } else {
+    console.log("commandDeleteApiV1CommandId failed:", res.error);
   }
-
-  const { value: result } = res;
-
-  
 }
 
 run();
@@ -168,6 +164,7 @@ run();
 
 ### Example Usage
 
+<!-- UsageSnippet language="typescript" operationID="post_/api/v1/command" method="post" path="/api/v1/command" -->
 ```typescript
 import { Prowlarr } from "prowlarr";
 
@@ -180,7 +177,6 @@ const prowlarr = new Prowlarr({
 async function run() {
   const result = await prowlarr.command.postApiV1Command();
 
-  // Handle the result
   console.log(result);
 }
 
@@ -205,15 +201,12 @@ const prowlarr = new ProwlarrCore({
 
 async function run() {
   const res = await commandPostApiV1Command(prowlarr);
-
-  if (!res.ok) {
-    throw res.error;
+  if (res.ok) {
+    const { value: result } = res;
+    console.log(result);
+  } else {
+    console.log("commandPostApiV1Command failed:", res.error);
   }
-
-  const { value: result } = res;
-
-  // Handle the result
-  console.log(result);
 }
 
 run();
@@ -242,6 +235,7 @@ run();
 
 ### Example Usage
 
+<!-- UsageSnippet language="typescript" operationID="get_/api/v1/command" method="get" path="/api/v1/command" -->
 ```typescript
 import { Prowlarr } from "prowlarr";
 
@@ -254,7 +248,6 @@ const prowlarr = new Prowlarr({
 async function run() {
   const result = await prowlarr.command.getApiV1Command();
 
-  // Handle the result
   console.log(result);
 }
 
@@ -279,15 +272,12 @@ const prowlarr = new ProwlarrCore({
 
 async function run() {
   const res = await commandGetApiV1Command(prowlarr);
-
-  if (!res.ok) {
-    throw res.error;
+  if (res.ok) {
+    const { value: result } = res;
+    console.log(result);
+  } else {
+    console.log("commandGetApiV1Command failed:", res.error);
   }
-
-  const { value: result } = res;
-
-  // Handle the result
-  console.log(result);
 }
 
 run();

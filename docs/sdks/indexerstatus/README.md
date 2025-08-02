@@ -11,6 +11,7 @@
 
 ### Example Usage
 
+<!-- UsageSnippet language="typescript" operationID="get_/api/v1/indexerstatus" method="get" path="/api/v1/indexerstatus" -->
 ```typescript
 import { Prowlarr } from "prowlarr";
 
@@ -23,7 +24,6 @@ const prowlarr = new Prowlarr({
 async function run() {
   const result = await prowlarr.indexerStatus.getApiV1Indexerstatus();
 
-  // Handle the result
   console.log(result);
 }
 
@@ -48,15 +48,12 @@ const prowlarr = new ProwlarrCore({
 
 async function run() {
   const res = await indexerStatusGetApiV1Indexerstatus(prowlarr);
-
-  if (!res.ok) {
-    throw res.error;
+  if (res.ok) {
+    const { value: result } = res;
+    console.log(result);
+  } else {
+    console.log("indexerStatusGetApiV1Indexerstatus failed:", res.error);
   }
-
-  const { value: result } = res;
-
-  // Handle the result
-  console.log(result);
 }
 
 run();

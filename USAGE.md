@@ -11,7 +11,6 @@ const prowlarr = new Prowlarr({
 async function run() {
   const result = await prowlarr.apiInfo.getApi();
 
-  // Handle the result
   console.log(result);
 }
 

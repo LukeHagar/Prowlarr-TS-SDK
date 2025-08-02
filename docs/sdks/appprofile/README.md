@@ -16,6 +16,7 @@
 
 ### Example Usage
 
+<!-- UsageSnippet language="typescript" operationID="post_/api/v1/appprofile" method="post" path="/api/v1/appprofile" -->
 ```typescript
 import { Prowlarr } from "prowlarr";
 
@@ -28,7 +29,6 @@ const prowlarr = new Prowlarr({
 async function run() {
   const result = await prowlarr.appProfile.postApiV1Appprofile();
 
-  // Handle the result
   console.log(result);
 }
 
@@ -53,15 +53,12 @@ const prowlarr = new ProwlarrCore({
 
 async function run() {
   const res = await appProfilePostApiV1Appprofile(prowlarr);
-
-  if (!res.ok) {
-    throw res.error;
+  if (res.ok) {
+    const { value: result } = res;
+    console.log(result);
+  } else {
+    console.log("appProfilePostApiV1Appprofile failed:", res.error);
   }
-
-  const { value: result } = res;
-
-  // Handle the result
-  console.log(result);
 }
 
 run();
@@ -90,6 +87,7 @@ run();
 
 ### Example Usage
 
+<!-- UsageSnippet language="typescript" operationID="get_/api/v1/appprofile" method="get" path="/api/v1/appprofile" -->
 ```typescript
 import { Prowlarr } from "prowlarr";
 
@@ -102,7 +100,6 @@ const prowlarr = new Prowlarr({
 async function run() {
   const result = await prowlarr.appProfile.getApiV1Appprofile();
 
-  // Handle the result
   console.log(result);
 }
 
@@ -127,15 +124,12 @@ const prowlarr = new ProwlarrCore({
 
 async function run() {
   const res = await appProfileGetApiV1Appprofile(prowlarr);
-
-  if (!res.ok) {
-    throw res.error;
+  if (res.ok) {
+    const { value: result } = res;
+    console.log(result);
+  } else {
+    console.log("appProfileGetApiV1Appprofile failed:", res.error);
   }
-
-  const { value: result } = res;
-
-  // Handle the result
-  console.log(result);
 }
 
 run();
@@ -163,6 +157,7 @@ run();
 
 ### Example Usage
 
+<!-- UsageSnippet language="typescript" operationID="delete_/api/v1/appprofile/{id}" method="delete" path="/api/v1/appprofile/{id}" -->
 ```typescript
 import { Prowlarr } from "prowlarr";
 
@@ -203,14 +198,12 @@ async function run() {
   const res = await appProfileDeleteApiV1AppprofileId(prowlarr, {
     id: 344853,
   });
-
-  if (!res.ok) {
-    throw res.error;
+  if (res.ok) {
+    const { value: result } = res;
+    
+  } else {
+    console.log("appProfileDeleteApiV1AppprofileId failed:", res.error);
   }
-
-  const { value: result } = res;
-
-  
 }
 
 run();
@@ -239,6 +232,7 @@ run();
 
 ### Example Usage
 
+<!-- UsageSnippet language="typescript" operationID="put_/api/v1/appprofile/{id}" method="put" path="/api/v1/appprofile/{id}" -->
 ```typescript
 import { Prowlarr } from "prowlarr";
 
@@ -253,7 +247,6 @@ async function run() {
     id: "<id>",
   });
 
-  // Handle the result
   console.log(result);
 }
 
@@ -280,15 +273,12 @@ async function run() {
   const res = await appProfilePutApiV1AppprofileId(prowlarr, {
     id: "<id>",
   });
-
-  if (!res.ok) {
-    throw res.error;
+  if (res.ok) {
+    const { value: result } = res;
+    console.log(result);
+  } else {
+    console.log("appProfilePutApiV1AppprofileId failed:", res.error);
   }
-
-  const { value: result } = res;
-
-  // Handle the result
-  console.log(result);
 }
 
 run();
@@ -317,6 +307,7 @@ run();
 
 ### Example Usage
 
+<!-- UsageSnippet language="typescript" operationID="get_/api/v1/appprofile/{id}" method="get" path="/api/v1/appprofile/{id}" -->
 ```typescript
 import { Prowlarr } from "prowlarr";
 
@@ -331,7 +322,6 @@ async function run() {
     id: 92439,
   });
 
-  // Handle the result
   console.log(result);
 }
 
@@ -358,15 +348,12 @@ async function run() {
   const res = await appProfileGetApiV1AppprofileId(prowlarr, {
     id: 92439,
   });
-
-  if (!res.ok) {
-    throw res.error;
+  if (res.ok) {
+    const { value: result } = res;
+    console.log(result);
+  } else {
+    console.log("appProfileGetApiV1AppprofileId failed:", res.error);
   }
-
-  const { value: result } = res;
-
-  // Handle the result
-  console.log(result);
 }
 
 run();
@@ -395,6 +382,7 @@ run();
 
 ### Example Usage
 
+<!-- UsageSnippet language="typescript" operationID="get_/api/v1/appprofile/schema" method="get" path="/api/v1/appprofile/schema" -->
 ```typescript
 import { Prowlarr } from "prowlarr";
 
@@ -407,7 +395,6 @@ const prowlarr = new Prowlarr({
 async function run() {
   const result = await prowlarr.appProfile.getApiV1AppprofileSchema();
 
-  // Handle the result
   console.log(result);
 }
 
@@ -432,15 +419,12 @@ const prowlarr = new ProwlarrCore({
 
 async function run() {
   const res = await appProfileGetApiV1AppprofileSchema(prowlarr);
-
-  if (!res.ok) {
-    throw res.error;
+  if (res.ok) {
+    const { value: result } = res;
+    console.log(result);
+  } else {
+    console.log("appProfileGetApiV1AppprofileSchema failed:", res.error);
   }
-
-  const { value: result } = res;
-
-  // Handle the result
-  console.log(result);
 }
 
 run();
