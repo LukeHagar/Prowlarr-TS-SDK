@@ -8,7 +8,7 @@ dotenv.config();
  * Example usage of the prowlarr SDK
  *
  * To run this example from the examples directory:
- * npm run build && npx tsx apiInfoGetApi.ts
+ * npm run build && npx tsx apiInfoGetApi.example.ts
  */
 
 import { Prowlarr } from "prowlarr";
